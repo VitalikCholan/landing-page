@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: aliceblue;
+    background-color: #385de2;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li{
+    list-style-type: none;
+    padding: 0 0.5em;
+    font-size: 1.5rem;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+    border-bottom: 3px solid aqua;
+}
+
+.main-info{
+    color: white;
+    background-image: url(../images/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12em 0; 
+    text-align: center;   
+}
+
+.main-info h2{
+    font-size: 5rem;
+}
+
+.main-info p{
+    font-size: 2rem;
+}
+
+.main-info input{
+    height: 2em;
+    width: 15em;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 0.5em;
+}
+
+.main-info button{
+    height: 2em;
+    width: 10em;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    color: white;
+    transition: background-color, 0.5s;
+}
+
+.main-info button:hover{
+    cursor: pointer;
+    background-color: #3089e8;
+}
