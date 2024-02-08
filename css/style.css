@@ -74,7 +74,7 @@ a:hover{
     opacity: 0.5;
 }
 
-.welcome h2{
+.welcome-title{
     font-size: 4rem;
     text-transform: uppercase;
 }
@@ -163,7 +163,7 @@ a:hover{
     padding: 1em;
 }
 
-.text-testemonials h4{
+.name{
     text-align: center;
     font-size: 2rem;
     margin: 0;
@@ -193,6 +193,10 @@ a:hover{
     padding: 1.5em;
 }
 
+.social-links a{
+    padding-bottom: 0.2em;
+}
+
 .social-links a i{
     font-size: 2rem;
 }
@@ -207,7 +211,7 @@ a:hover{
         padding: 0 2em;
     }
 
-    .welcome h2, .welcome p{
+    .welcome-title, .welcome p{
         padding: 0 0.5em;
     }
 
