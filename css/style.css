@@ -228,8 +228,12 @@ a:hover{
         width: 100%;
     }
 
-    .box-main .text:nth-child(odd), .box-main .image:nth-child(even){
+    .box-main .text:nth-child(odd){
         margin-bottom: 1.5em;
+    }
+
+    .box-main img{
+        display: block;
     }
 
     .container-testemonials{
@@ -248,8 +252,12 @@ a:hover{
         width: 100%;
     }
 
-    .box-main .text:nth-child(odd), .box-main .image:nth-child(even){
+    .box-main .text:nth-child(odd){
         margin-bottom: 1.5em;
+    }
+
+    .box-main img{
+        display: block;
     }
 
     .container-testemonials > * {
