@@ -77,10 +77,12 @@ a:hover{
 .welcome-title{
     font-size: 4rem;
     text-transform: uppercase;
+    margin: 0 0.5em;
 }
 
 .welcome p{
     font-size: 2rem;
+    margin: 0 1em 1em;
 }
 
 .welcome input{
@@ -89,7 +91,7 @@ a:hover{
     font-size: 1.5rem;
     border: none;
     border-radius: 10px;
-    margin-right: 0.5em;
+    margin: 0 0.5em;
 }
 
 .welcome button{
@@ -98,6 +100,7 @@ a:hover{
     font-size: 1.5rem;
     border: none;
     border-radius: 10px;
+    margin-right: 0.5em;
     background-color: #7fffd4;
     color:  #003C7B;
     transition: background-color, 0.5s;
@@ -201,7 +204,7 @@ a:hover{
     font-size: 2rem;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:685px){
     .container-header{
         display: flex;
         flex-direction: column;
@@ -242,7 +245,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width:860px){
+@media screen and (max-width:1000px){
     .box-main{
         display: flex;
         flex-direction: column;
@@ -260,7 +263,7 @@ a:hover{
         display: block;
     }
 
-    .container-testemonials > * {
+    .container-testemonials > *{
     flex-basis: 33%;
     }
 }
