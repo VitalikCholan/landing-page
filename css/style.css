@@ -78,11 +78,13 @@ a:hover{
     font-size: 4rem;
     text-transform: uppercase;
     margin: 0 0.5em;
+    text-wrap: balance;
 }
 
 .welcome p{
     font-size: 2rem;
     margin: 0 1em 1em;
+    text-wrap: balance;
 }
 
 .welcome input{
@@ -174,6 +176,59 @@ a:hover{
 
 .text-testemonials p{
     font-size: 1.2rem;
+}
+
+.container-faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-faq{
+    background-color: #0045BD;
+    margin: 1em;
+    border-radius: 25px;
+    padding: 1em;
+    box-shadow: 0 3px 5px #00000099;
+}
+
+.box-faq .question{
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 1px solid #FFFFFF;
+    position: relative;
+}
+
+.box-faq .question h5{
+    margin-block: 1em;
+}
+
+.box-faq .question::after{
+    content: "+";
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
+
+.box-faq .answer{
+    font-size: 1.2rem;
+    height: 0;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.box-faq.active .answer{
+    height: 10em;
+}
+
+.box-faq.active .question::after{
+    content: "-";
+    position: absolute;
+    right: 0px;
+    top: -5px;
 }
 
 .footer{
