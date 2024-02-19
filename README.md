@@ -1,3 +1,3 @@
 # Landing page of sports equipment
 
-Landing page using flexbox
+Landing page with Flexbox and accordion(JS events)

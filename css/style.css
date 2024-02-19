@@ -181,7 +181,6 @@ a:hover{
 .container-faq{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -215,13 +214,13 @@ a:hover{
 
 .box-faq .answer{
     font-size: 1.2rem;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition-duration: 0.5s;
+    transition: max-height 1s ease-in-out;
 }
 
 .box-faq.active .answer{
-    height: 10em;
+    max-height: 1000px;
 }
 
 .box-faq.active .question::after{
