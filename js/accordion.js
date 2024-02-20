@@ -1,15 +1,15 @@
 const accordions = document.querySelectorAll('.box-faq');
 
 accordions.forEach(accordion => {
-    const answer = document.querySelector('.answer');
-
     accordion.addEventListener('click', () => {
-        accordion.classList.toggle('active');
+        const isActive = accordion.classList.toggle('active');
 
-        if(accordion.classList.contains('active')){
-            answer.style.height = `${answer.scrollHeight}px`;
+        const answer = accordion.querySelector('.answer');
+
+        if(isActive){
+            answer.style.maxHeight = `${answer.scrollHeight}px`;
         } else{
-            answer.style.height = '0px';
+            answer.style.maxHeight = '0px';
         }
     });
 });
