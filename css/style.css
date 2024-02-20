@@ -202,11 +202,12 @@ a:hover{
 }
 
 .box-faq .question h5{
-    margin-block: 1em;
+    margin: 1em 1.5em;
 }
 
 .box-faq .question::after{
     content: "+";
+    font-size: 2rem;
     position: absolute;
     right: 0px;
     top: -5px;
@@ -225,6 +226,7 @@ a:hover{
 
 .box-faq.active .question::after{
     content: "-";
+    font-size: 2rem;
     position: absolute;
     right: 0px;
     top: -5px;

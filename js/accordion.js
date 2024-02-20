@@ -3,8 +3,11 @@ const answers = document.querySelectorAll('.answer');
 
 accordions.forEach(accordion => {
     accordion.addEventListener('click', () => {
-        accordion.classList.toggle('active');
-
-        answers.style.height = answers.scrollHeight + 'px';
+        if(accordion.classList.toggle('active')){
+            answers.style.height = `${answers.scrollHeight}px`;
+        } else{
+            answers.style.height = '0px';
+        }
     })
 });
+
