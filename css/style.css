@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,53 +6,53 @@ body{
     color: #FFFFFF;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
     letter-spacing: 8px;
 }
 
-p, a{
+p, a {
     line-height: 1.5;
     letter-spacing: 4px;
 }
 
-header{
+header {
     background-color: #0045BD;
 }
 
-.container-header{
+.container-header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.title{
+.title {
     font-size: 2.5rem;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-li{
+li {
     list-style-type: none;
     padding: 0 0.5em;
     font-size: 1.5rem;
 }
 
-a{
+a {
     color: #FFFFFF;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: #00ffff;
     border-bottom: 3px solid #00ffff;
 }
 
-.welcome{
+.welcome {
     background-image: url(../images/gym.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ a:hover{
 }
 
 /* Made text more readable on background image*/
-.welcome::after{
+.welcome::after {
     content: '';
     position: absolute;
     background-color: #1D5795;
@@ -74,20 +74,20 @@ a:hover{
     opacity: 0.5;
 }
 
-.welcome-title{
+.welcome-title {
     font-size: 4rem;
     text-transform: uppercase;
     margin: 0 0.5em;
     text-wrap: balance;
 }
 
-.welcome p{
+.welcome p {
     font-size: 2rem;
     margin: 0 1em 1em;
     text-wrap: balance;
 }
 
-.welcome input{
+.welcome input {
     height: 2em;
     width: 15em;
     font-size: 1.5rem;
@@ -96,7 +96,7 @@ a:hover{
     margin: 0 0.5em;
 }
 
-.welcome button{
+.welcome button {
     height: 2em;
     width: 10em;
     font-size: 1.5rem;
@@ -108,13 +108,13 @@ a:hover{
     transition: background-color, 0.5s;
 }
 
-.welcome button:hover{
+.welcome button:hover {
     cursor: pointer;
     background-color: #003C7B;
     color: #7fffd4;
 }
 
-.box-main{
+.box-main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -122,31 +122,31 @@ a:hover{
     background-color: #004ACB;
 }
 
-.box-main div{
+.box-main div {
     width: 50%;
 }
 
-.box-main .text{
+.box-main .text {
     align-self: center;
 }
 
-.box-main .text h3{
+.box-main .text h3 {
     text-transform: uppercase;
     font-size: 3rem;
     margin: 0.5em 1em;
 }
 
-.box-main .text p{
+.box-main .text p {
     font-size: 1.5rem;
     margin: 0 2em;
 }
 
-.box-main .image img{
+.box-main .image img {
     width: 100%;
     height: 100%;
 }
 
-.container-testemonials{
+.container-testemonials {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -154,13 +154,13 @@ a:hover{
     border-bottom: 20px solid #0000ff;
 }
 
-.container-testemonials img{
+.container-testemonials img {
     height: 100%;
     width: 100%;
     clip-path: circle();
 }
 
-.box-testemonials{
+.box-testemonials {
     flex: 1;
     background-color: #004ACB;
     border-radius: 10px;
@@ -169,23 +169,23 @@ a:hover{
     box-shadow: 0 3px 5px #00000099;
 }
 
-.name{
+.name {
     text-align: center;
     font-size: 2rem;
     margin: 0;
 }
 
-.text-testemonials p{
+.text-testemonials p {
     font-size: 1.2rem;
 }
 
-.container-faq{
+.container-faq {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.box-faq{
+.box-faq {
     background-color: #0045BD;
     margin: 1em;
     border-radius: 25px;
@@ -193,7 +193,7 @@ a:hover{
     box-shadow: 0 3px 5px #00000099;
 }
 
-.box-faq .question{
+.box-faq .question {
     font-size: 1.7rem;
     text-align: center;
     text-transform: uppercase;
@@ -202,11 +202,11 @@ a:hover{
     position: relative;
 }
 
-.box-faq .question h5{
+.box-faq .question h5 {
     margin: 1em 1.5em;
 }
 
-.box-faq .question::after{
+.box-faq .question::after {
     content: "+";
     font-size: 2rem;
     position: absolute;
@@ -214,18 +214,18 @@ a:hover{
     top: -5px;
 }
 
-.box-faq .answer{
+.box-faq .answer {
     font-size: 1.2rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
 }
 
-.box-faq.active .answer{
+.box-faq.active .answer {
     max-height: 1000px;
 }
 
-.box-faq.active .question::after{
+.box-faq.active .question::after {
     content: "-";
     font-size: 2rem;
     position: absolute;
@@ -233,35 +233,35 @@ a:hover{
     top: -5px;
 }
 
-.footer{
+.footer {
     background-color: #0045BD;
 }
 
-.footer .title-social-links{
+.footer .title-social-links {
     padding-top: 1em;
     margin: 0;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.container-footer{
+.container-footer {
     display: flex;
     justify-content: center;
 }
 
-.social-links{
+.social-links {
     padding: 1.5em;
 }
 
-.social-links a{
+.social-links a {
     padding-bottom: 0.2em;
 }
 
-.social-links a i{
+.social-links a i {
     font-size: 2rem;
 }
 
-@media screen and (max-width:685px){
+@media screen and (max-width:685px) {
     .container-header{
         display: flex;
         flex-direction: column;
@@ -302,7 +302,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
     .box-main{
         display: flex;
         flex-direction: column;
