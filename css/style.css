@@ -16,7 +16,7 @@ p, a {
 }
 
 header {
-    background-color: #0045BD;
+    background-color: #0843a0;
 }
 
 .container-header {
@@ -151,7 +151,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 20px solid #0000ff;
+    border-bottom: 20px solid #0843a0;
 }
 
 .container-testemonials img {
@@ -234,7 +234,7 @@ a:hover {
 }
 
 .footer {
-    background-color: #0045BD;
+    background-color: #0843a0;
 }
 
 .footer .title-social-links {
