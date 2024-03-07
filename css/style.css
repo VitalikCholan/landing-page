@@ -13,13 +13,11 @@ h1, h2, h3, h4, h5 {
 p, a {
     line-height: 1.5;
     letter-spacing: 4px;
-}
-
-header {
-    background-color: #0843a0;
+    color: #FFFFFF;
 }
 
 .container-header {
+    background-color: #0843a0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,14 +40,27 @@ li {
     font-size: 1.5rem;
 }
 
-a {
-    color: #FFFFFF;
+.nav-link {
     text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
 }
 
-a:hover {
-    color: #00ffff;
-    border-bottom: 3px solid #00ffff;
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #00ffff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
 }
 
 .welcome {
@@ -94,6 +105,8 @@ a:hover {
     border: none;
     border-radius: 10px;
     margin: 0 0.5em;
+    padding: 0 0.4em;
+    outline: none;
 }
 
 .welcome button {
@@ -103,22 +116,38 @@ a:hover {
     border: none;
     border-radius: 10px;
     margin-right: 0.5em;
-    background-color: #7fffd4;
     color:  #003C7B;
-    transition: background-color, 0.5s;
+    background-color: #7fffd4;
+    position: relative;
+    z-index: 0;
+    transition: color 300ms ease-in; 
 }
 
 .welcome button:hover {
-    cursor: pointer;
-    background-color: #003C7B;
     color: #7fffd4;
+    cursor: pointer;
+}
+
+.welcome button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #003C7B;
+    border-radius: 10px;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 300ms ease-in; 
+}
+
+.welcome button:hover::after {
+    transform: scale(1);
 }
 
 .box-main {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: #004ACB;
 }
 
@@ -259,6 +288,12 @@ a:hover {
 
 .social-links a i {
     font-size: 2rem;
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.social-links a i:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:685px) {
