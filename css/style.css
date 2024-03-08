@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 8px;
 }
 
-p, a {
+p {
     line-height: 1.5;
     letter-spacing: 4px;
     color: #FFFFFF;
@@ -24,24 +24,25 @@ p, a {
     align-items: center;
 }
 
-.title {
+.container-header .title {
     font-size: 2.5rem;
 }
 
-ul {
+.container-header ul {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-li {
+.container-header ul li {
     list-style-type: none;
     padding: 0 0.5em;
     font-size: 1.5rem;
 }
 
-.nav-link {
+.container-header ul li .nav-link {
     text-decoration: none;
+    letter-spacing: 4px;
     color: #FFFFFF;
     position: relative;
 }
@@ -85,7 +86,7 @@ li {
     opacity: 0.5;
 }
 
-.welcome-title {
+.welcome .welcome-title {
     font-size: 4rem;
     text-transform: uppercase;
     margin: 0 0.5em;
@@ -198,13 +199,13 @@ li {
     box-shadow: 0 3px 5px #00000099;
 }
 
-.name {
+.box-testemonials .name {
     text-align: center;
     font-size: 2rem;
     margin: 0;
 }
 
-.text-testemonials p {
+.box-testemonials .text-testemonials p {
     font-size: 1.2rem;
 }
 
@@ -262,78 +263,144 @@ li {
     top: -5px;
 }
 
-.footer {
-    background-color: #0843a0;
-}
-
-.footer .title-social-links {
-    padding-top: 1em;
-    margin: 0;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
 .container-footer {
+    background-color: #0843a0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.social-links {
-    padding: 1.5em;
-}
-
-.social-links a {
-    padding-bottom: 0.2em;
-}
-
-.social-links a i {
+.container-footer .title-social-links {
     font-size: 2rem;
+}
+
+.container-footer .container-social {
+    display: inline-flex;
+    align-items: center;
+}
+
+.container-social .social-links {
+    margin: 0 1.5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container-social .social-links a {
+    position: relative;
+    height: 4em;
+    width: 4em;
+    display: block;
+    background-color: inherit;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 200ms ease-in;
+}
+
+.container-social .social-links a:hover {
+    background-color: #00ffff;
+}
+
+.container-social .social-links a i {
+    font-size: 2rem;
+    line-height: 60px;
+    color: #FFFFFF;
     transform: scale(1);
-    transition: transform 200ms ease-in-out;
+    transition: all 200ms ease-in;
 }
 
-.social-links a i:hover {
+.container-social .social-links a i:hover {
     transform: scale(1.2);
+    color: #004ACB;
 }
 
-@media screen and (max-width:685px) {
-    .container-header{
+.container-social .social-links .tooltip {
+    position: absolute;
+    top: 0px;
+    background-color: #00ffff;
+    color: #004ACB;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    opacity: 0;
+    min-width: 88px;
+    pointer-events: none;
+    transition: all 400ms ease-in-out;
+}
+
+.container-social .social-links:hover .tooltip {
+    top: -55px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container-social .social-links .tooltip::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #00ffff;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-60%) rotate(45deg);
+}
+
+@media screen and (max-width:820px) {
+    .container-header {
         display: flex;
         flex-direction: column;
     }
 
-    .container-header ul{
+    .container-header ul {
         padding: 0 2em;
     }
 
-    .welcome-title, .welcome p{
+    .welcome-title, .welcome p {
         padding: 0 0.5em;
     }
 
-    .welcome button{
+    .welcome button {
         margin-top: 1em;
     }
 
-    .box-main{
+    .box-main {
         display: flex;
         flex-direction: column;
     }
 
-    .box-main .text, .box-main .image{
+    .box-main .text, .box-main .image {
         width: 100%;
     }
 
-    .box-main .text:nth-child(odd){
+    .box-main .text:nth-child(odd) {
         margin-bottom: 1.5em;
     }
 
-    .box-main img{
+    .box-main img {
         display: block;
     }
 
-    .container-testemonials{
+    .container-testemonials {
         display: flex;
         flex-direction: column;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-footer .title-social-links {
+        text-align: center;
+    }
+
+    .container-footer .container-social {
+        margin: 0 auto 1.5em;
     }
 }
 
