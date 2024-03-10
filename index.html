@@ -16,11 +16,39 @@
             <h1 class="title">Gym Bro</h1>
 
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="dropdown">
+                    <li class="nav-link dropdown-item" tabindex="0">
+                        Home
+                        <div class="dropdown-menu dropdown-menu-home">      
+                            <a href="#" class="dropdown-link">Products</a>
+                            <a href="#" class="dropdown-link">Services</a>
+                            <a href="#" class="dropdown-link">Testimonials</a>
+                        </div>
+                    </li>
+                    <li class="nav-link dropdown-item" tabindex="0">
+                        Shop
+                        <div class="dropdown-menu dropdown-menu-shop">      
+                            <a href="#" class="dropdown-link">Apparel</a>
+                            <a href="#" class="dropdown-link">Equipment</a>
+                            <a href="#" class="dropdown-link">Accessories</a>
+                        </div>
+                    </li>
+                    <li class="nav-link dropdown-item" tabindex="0">
+                        About
+                        <div class="dropdown-menu dropdown-menu-about">      
+                            <a href="#" class="dropdown-link">Our Story</a>
+                            <a href="#" class="dropdown-link">Vision</a>
+                            <a href="#" class="dropdown-link">Team</a>
+                        </div>
+                    </li>
+                    <li class="nav-link dropdown-item" tabindex="0">
+                        Contact
+                        <div class="dropdown-menu dropdown-menu-contact">      
+                            <a href="#" class="dropdown-link">Contact Us</a>
+                            <a href="#" class="dropdown-link">Support</a>
+                            <a href="#" class="dropdown-link">FAQs</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +58,7 @@
         <section class="welcome">
             <h2 class="welcome-title">Start training for yourself today!</h2>
             <p>Everything what you need for your training process in one place.</p>
-            <input type="email" name="email" id="email" placeholder=" Email">
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
             <button>Sign Up</button>
         </section>
 
@@ -197,27 +225,34 @@
     </main>
 
     <footer class="footer">
-        <h6 class="title-social-links">Our social links</h6>
-
         <div class="container-footer">
-            <div class="social-links">
-                <a href="#" aria-label="Link to your Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+            <h6 class="title-social-links">Our social links</h6>
 
-            <div class="social-links">
-                <a href="#" aria-label="Link to your Youtube channel"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+            <div class="container-social">
+                <div class="social-links">   
+                    <div class="tooltip">Instagram</div>             
+                    <a href="#" aria-label="Link to your Instagram"><i class="fa-brands fa-instagram"></i></a>               
+                </div>
 
-            <div class="social-links">
-                <a href="#" aria-label="Link to your X(Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
+                <div class="social-links">  
+                    <div class="tooltip">Youtube</div>                     
+                    <a href="#" aria-label="Link to your Youtube channel"><i class="fa-brands fa-youtube"></i></a>               
+                </div>
 
-            <div class="social-links">
-                <a href="#" aria-label="Link to your Facebook"><i class="fa-brands fa-facebook"></i></a>
-            </div>
+                <div class="social-links"> 
+                    <div class="tooltip">X (Twitter)</div>                            
+                    <a href="#" aria-label="Link to your X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>                
+                </div>
 
-            <div class="social-links">
-                <a href="#" aria-label="Link to your Telegram"><i class="fa-brands fa-telegram"></i></a>
+                <div class="social-links"> 
+                    <div class="tooltip">Facebook</div>                            
+                    <a href="#" aria-label="Link to your Facebook"><i class="fa-brands fa-facebook"></i></a>               
+                </div>
+
+                <div class="social-links">
+                    <div class="tooltip">Telegram</div>                         
+                    <a href="#" aria-label="Link to your Telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
             </div>
         </div>
     </footer>
