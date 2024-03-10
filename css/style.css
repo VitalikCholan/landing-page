@@ -144,7 +144,7 @@ p {
     text-wrap: balance;
 }
 
-.welcome p {
+.welcome .welcome-text {
     font-size: 2rem;
     margin: 0 1em 1em;
     text-wrap: balance;
@@ -161,7 +161,7 @@ p {
     outline: none;
 }
 
-.welcome button {
+.welcome .email-btn {
     height: 2em;
     width: 10em;
     font-size: 1.5rem;
@@ -175,12 +175,12 @@ p {
     transition: color 300ms ease-in; 
 }
 
-.welcome button:hover {
+.welcome .email-btn:hover {
     color: #7fffd4;
     cursor: pointer;
 }
 
-.welcome button::after {
+.welcome .email-btn::after {
     content: '';
     position: absolute;
     top: 0;
@@ -194,8 +194,156 @@ p {
     transition: transform 300ms ease-in; 
 }
 
-.welcome button:hover::after {
+.welcome .email-btn:hover::after {
     transform: scale(1);
+}
+
+.welcome #modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: none; 
+}
+
+.welcome #modal-container-one {
+    display: none;
+    z-index: 1;
+}
+
+.welcome #modal-one {
+    background-color: #0843a0;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: modalOneStart;
+    animation-duration: 500ms;
+}
+
+.welcome #modal-one .modal-text-one {
+    color: #00ffff;
+    font-size: 1.5rem;
+    text-wrap: balance;
+    padding: 0;
+}
+
+.welcome #modal-one #close-btn-one {
+    color: #7fffd4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@keyframes modalOneStart {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 17%;
+        opacity: 1;
+    }
+}
+
+.welcome #modal-container-two {
+    display: none;
+    z-index: 1;
+}
+
+.welcome #modal-two {
+    background-color: #0843a0;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: modalTwo;
+    animation-duration: 500ms;
+}
+
+.welcome #modal-two .modal-text-two {
+    color: #00ffff;
+    font-size: 1.5rem;
+    text-wrap: balance;
+    padding: 0;
+}
+
+.welcome #modal-two #close-btn-two {
+    color: #7fffd4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@keyframes modalTwo {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 17%;
+        opacity: 1;
+    }
+}
+
+.welcome #modal-container-three {
+    display: none;
+    z-index: 1;
+}
+
+.welcome #modal-three {
+    background-color: #0843a0;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: modalThree;
+    animation-duration: 500ms;
+}
+
+.welcome #modal-three .modal-text-three {
+    color: #00ffff;
+    font-size: 1.5rem;
+    text-wrap: balance;
+    padding: 0;
+}
+
+.welcome #modal-three #close-btn-three {
+    color: #7fffd4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@keyframes modalThree {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 17%;
+        opacity: 1;
+    }
 }
 
 .box-main {

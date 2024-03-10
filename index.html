@@ -57,9 +57,32 @@
     <main>
         <section class="welcome">
             <h2 class="welcome-title">Start training for yourself today!</h2>
-            <p>Everything what you need for your training process in one place.</p>
+            <p class="welcome-text">Everything what you need for your training process in one place.</p>
             <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
-            <button>Sign Up</button>
+            <button class="email-btn">Sign Up</button>
+
+            <div id="modal-overlay"></div>
+
+            <div id="modal-container-one">
+                <div id="modal-one">
+                    <p class="modal-text-one">Please provide an email adress!</p>
+                    <div id="close-btn-one"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+
+            <div id="modal-container-two">
+                <div id="modal-two">
+                    <p class="modal-text-two">The email address you entered is not valid. Please enter a valid email address.</p>
+                    <div id="close-btn-two"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+
+            <div id="modal-container-three">
+                <div id="modal-three">
+                    <p class="modal-text-three">Your email has been successfully validated!</p>
+                    <div id="close-btn-three"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
         </section>
 
         <section class="main-info">
@@ -257,6 +280,7 @@
         </div>
     </footer>
 
+    <script src="js/email.js"></script>
     <script src="js/accordion.js"></script>
 </body>
 </html>
