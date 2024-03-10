@@ -106,9 +106,13 @@ p {
     transform: translateY(0);
 }
 
-.link {
+.dropdown-link {
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+.dropdown-link:hover {
+    border-bottom: 2px solid currentColor;
 }
 
 .welcome {
