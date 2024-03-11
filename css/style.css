@@ -271,7 +271,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation-name: modalTwo;
+    animation-name: modalTwoStart;
     animation-duration: 500ms;
 }
 
@@ -288,7 +288,7 @@ p {
     cursor: pointer;
 }
 
-@keyframes modalTwo {
+@keyframes modalTwoStart {
     from {
         top: -300px;
         opacity: 0;
@@ -317,7 +317,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation-name: modalThree;
+    animation-name: modalThreeStart;
     animation-duration: 500ms;
 }
 
@@ -334,7 +334,7 @@ p {
     cursor: pointer;
 }
 
-@keyframes modalThree {
+@keyframes modalThreeStart {
     from {
         top: -300px;
         opacity: 0;
@@ -547,6 +547,52 @@ p {
     bottom: -8px;
     left: 50%;
     transform: translateX(-60%) rotate(45deg);
+}
+
+@media screen and (max-width: 610px) {
+    .dropdown-menu:nth-child(1) {
+        padding: 0.5em;
+        margin-left: 0.3em;
+        font-size: 1rem;
+    }
+
+    .container-footer .container-social {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+        grid-template-areas: 
+        'instagram . youtube . x'
+        '. facebook . telegram .';
+    }
+
+    .social-links:nth-child(1) {
+        grid-area: instagram;
+    } 
+
+    .social-links:nth-child(2) {
+        grid-area: youtube;
+    }
+
+    .social-links:nth-child(3) {
+        grid-area: x;
+    }
+
+    .social-links:nth-child(4) {
+        grid-area: facebook;
+    }
+
+    .social-links:nth-child(5) {
+        grid-area: telegram;
+    }
+
+    .container-social .social-links .tooltip {
+        font-size: 1rem;
+        padding: 0.3em;
+    }
+
+    .container-social .social-links:hover .tooltip {
+        top: -40px;
+    }
 }
 
 @media screen and (max-width:820px) {
