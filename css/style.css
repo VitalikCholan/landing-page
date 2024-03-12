@@ -215,11 +215,11 @@ p {
 
 .welcome #modal-one {
     background-color: #0843a0;
-    position: absolute;
-    top: 17%;
+    position: fixed;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    min-width: 700px;
     height: 10%;
     border-radius: 10px;
     display: flex;
@@ -249,7 +249,7 @@ p {
     }
 
     to {
-        top: 17%;
+        top: 20%;
         opacity: 1;
     }
 }
@@ -261,11 +261,11 @@ p {
 
 .welcome #modal-two {
     background-color: #0843a0;
-    position: absolute;
+    position: fixed;
     top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    min-width: 600px;
     height: 10%;
     border-radius: 10px;
     display: flex;
@@ -307,12 +307,12 @@ p {
 
 .welcome #modal-three {
     background-color: #0843a0;
-    position: absolute;
+    position: fixed;
     top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 10%;
+    min-width: 600px;
+    height: 15%;
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -332,6 +332,7 @@ p {
     color: #7fffd4;
     font-size: 2rem;
     cursor: pointer;
+    margin-right: 0.5em;
 }
 
 @keyframes modalThreeStart {
@@ -595,6 +596,25 @@ p {
     }
 }
 
+@media screen and (max-width: 650px){
+    .welcome #modal-two {
+        height: 15%;
+        min-width: 450px;
+    }
+
+    .welcome #modal-two #close-btn-two {
+        margin-right: 0.5em;
+    }
+
+    .welcome #modal-three {
+        min-width: 480px;
+    }
+
+    .welcome #modal-two #close-btn-two {
+        margin-left: 0.5em;
+    }
+}
+
 @media screen and (max-width:820px) {
     .container-header {
         display: flex;
@@ -611,6 +631,16 @@ p {
 
     .welcome button {
         margin-top: 1em;
+    }
+
+    
+    .welcome #modal-one {
+        min-width: 450px;
+        height: 15%;
+    }
+
+    .welcome #modal-one #close-btn-one {
+        margin-right: 0.5em;
     }
 
     .box-main {
