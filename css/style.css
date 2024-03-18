@@ -225,8 +225,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation-name: modalOneStart;
-    animation-duration: 500ms;
+    animation: modalOneStart 500ms ease-in-out forwards;
 }
 
 .welcome #modal-one .modal-text-one {
@@ -271,8 +270,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation-name: modalTwoStart;
-    animation-duration: 500ms;
+    animation: modalTwoStart 500ms ease-in-out forwards;
 }
 
 .welcome #modal-two .modal-text-two {
@@ -317,8 +315,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation-name: modalThreeStart;
-    animation-duration: 500ms;
+    animation: modalThreeStart 500ms ease-in-out forwards;
 }
 
 .welcome #modal-three .modal-text-three {
@@ -515,7 +512,6 @@ p {
 
 .container-social .social-links a i:hover {
     transform: scale(1.2);
-    color: #004ACB;
 }
 
 .container-social .social-links .tooltip {
