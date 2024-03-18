@@ -6,9 +6,9 @@ accordions.forEach(accordion => {
 
         const answer = accordion.querySelector('.answer');
 
-        if(isActive){
+        if (isActive) {
             answer.style.maxHeight = `${answer.scrollHeight}px`;
-        } else{
+        } else {
             answer.style.maxHeight = '0px';
         }
     });

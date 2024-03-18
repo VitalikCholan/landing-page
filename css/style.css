@@ -144,7 +144,7 @@ p {
     text-wrap: balance;
 }
 
-.welcome p {
+.welcome .welcome-text {
     font-size: 2rem;
     margin: 0 1em 1em;
     text-wrap: balance;
@@ -161,7 +161,7 @@ p {
     outline: none;
 }
 
-.welcome button {
+.welcome .email-btn {
     height: 2em;
     width: 10em;
     font-size: 1.5rem;
@@ -175,12 +175,12 @@ p {
     transition: color 300ms ease-in; 
 }
 
-.welcome button:hover {
+.welcome .email-btn:hover {
     color: #7fffd4;
     cursor: pointer;
 }
 
-.welcome button::after {
+.welcome .email-btn::after {
     content: '';
     position: absolute;
     top: 0;
@@ -194,8 +194,154 @@ p {
     transition: transform 300ms ease-in; 
 }
 
-.welcome button:hover::after {
+.welcome .email-btn:hover::after {
     transform: scale(1);
+}
+
+.welcome #modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: none; 
+}
+
+.welcome #modal-container-one {
+    display: none;
+    z-index: 1;
+}
+
+.welcome #modal-one {
+    background-color: #0843a0;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 700px;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: modalOneStart 500ms ease-in-out forwards;
+}
+
+.welcome #modal-one .modal-text-one {
+    color: #00ffff;
+    font-size: 1.5rem;
+    text-wrap: balance;
+    padding: 0;
+}
+
+.welcome #modal-one #close-btn-one {
+    color: #7fffd4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@keyframes modalOneStart {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 20%;
+        opacity: 1;
+    }
+}
+
+.welcome #modal-container-two {
+    display: none;
+    z-index: 1;
+}
+
+.welcome #modal-two {
+    background-color: #0843a0;
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    height: 10%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: modalTwoStart 500ms ease-in-out forwards;
+}
+
+.welcome #modal-two .modal-text-two {
+    color: #00ffff;
+    font-size: 1.5rem;
+    text-wrap: balance;
+    padding: 0;
+}
+
+.welcome #modal-two #close-btn-two {
+    color: #7fffd4;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@keyframes modalTwoStart {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 17%;
+        opacity: 1;
+    }
+}
+
+.welcome #modal-container-three {
+    display: none;
+    z-index: 1;
+}
+
+.welcome #modal-three {
+    background-color: #0843a0;
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 600px;
+    height: 15%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: modalThreeStart 500ms ease-in-out forwards;
+}
+
+.welcome #modal-three .modal-text-three {
+    color: #00ffff;
+    font-size: 1.5rem;
+    text-wrap: balance;
+    padding: 0;
+}
+
+.welcome #modal-three #close-btn-three {
+    color: #7fffd4;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+
+@keyframes modalThreeStart {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 17%;
+        opacity: 1;
+    }
 }
 
 .box-main {
@@ -366,7 +512,6 @@ p {
 
 .container-social .social-links a i:hover {
     transform: scale(1.2);
-    color: #004ACB;
 }
 
 .container-social .social-links .tooltip {
@@ -401,6 +546,71 @@ p {
     transform: translateX(-60%) rotate(45deg);
 }
 
+@media screen and (max-width: 610px) {
+    .dropdown-menu:nth-child(1) {
+        padding: 0.5em;
+        margin-left: 0.3em;
+        font-size: 1rem;
+    }
+
+    .container-footer .container-social {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+        grid-template-areas: 
+        'instagram . youtube . x'
+        '. facebook . telegram .';
+    }
+
+    .social-links:nth-child(1) {
+        grid-area: instagram;
+    } 
+
+    .social-links:nth-child(2) {
+        grid-area: youtube;
+    }
+
+    .social-links:nth-child(3) {
+        grid-area: x;
+    }
+
+    .social-links:nth-child(4) {
+        grid-area: facebook;
+    }
+
+    .social-links:nth-child(5) {
+        grid-area: telegram;
+    }
+
+    .container-social .social-links .tooltip {
+        font-size: 1rem;
+        padding: 0.3em;
+    }
+
+    .container-social .social-links:hover .tooltip {
+        top: -40px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .welcome #modal-two {
+        height: 15%;
+        min-width: 450px;
+    }
+
+    .welcome #modal-two #close-btn-two {
+        margin-right: 0.5em;
+    }
+
+    .welcome #modal-three {
+        min-width: 480px;
+    }
+
+    .welcome #modal-two #close-btn-two {
+        margin-left: 0.5em;
+    }
+}
+
 @media screen and (max-width:820px) {
     .container-header {
         display: flex;
@@ -417,6 +627,16 @@ p {
 
     .welcome button {
         margin-top: 1em;
+    }
+
+    
+    .welcome #modal-one {
+        min-width: 450px;
+        height: 15%;
+    }
+
+    .welcome #modal-one #close-btn-one {
+        margin-right: 0.5em;
     }
 
     .box-main {
