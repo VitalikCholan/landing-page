@@ -1,286 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gym Bro</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/94d4b51bbe.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/94d4b51bbe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div class="container-header">
-            <h1 class="title">Gym Bro</h1>
+      <div class="container-header">
+        <h1 class="title">Gym Bro</h1>
 
-            <nav>
-                <ul class="dropdown">
-                    <li class="nav-link dropdown-item" tabindex="0">
-                        Home
-                        <div class="dropdown-menu dropdown-menu-home">      
-                            <a href="#" class="dropdown-link">Products</a>
-                            <a href="#" class="dropdown-link">Services</a>
-                            <a href="#" class="dropdown-link">Testimonials</a>
-                        </div>
-                    </li>
-                    <li class="nav-link dropdown-item" tabindex="0">
-                        Shop
-                        <div class="dropdown-menu dropdown-menu-shop">      
-                            <a href="#" class="dropdown-link">Apparel</a>
-                            <a href="#" class="dropdown-link">Equipment</a>
-                            <a href="#" class="dropdown-link">Accessories</a>
-                        </div>
-                    </li>
-                    <li class="nav-link dropdown-item" tabindex="0">
-                        About
-                        <div class="dropdown-menu dropdown-menu-about">      
-                            <a href="#" class="dropdown-link">Our Story</a>
-                            <a href="#" class="dropdown-link">Vision</a>
-                            <a href="#" class="dropdown-link">Team</a>
-                        </div>
-                    </li>
-                    <li class="nav-link dropdown-item" tabindex="0">
-                        Contact
-                        <div class="dropdown-menu dropdown-menu-contact">      
-                            <a href="#" class="dropdown-link">Contact Us</a>
-                            <a href="#" class="dropdown-link">Support</a>
-                            <a href="#" class="dropdown-link">FAQs</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+          <ul class="dropdown">
+            <li class="nav-link dropdown-item" tabindex="0">
+              Home
+              <div class="dropdown-menu dropdown-menu-home">
+                <a href="#" class="dropdown-link">Products</a>
+                <a href="#" class="dropdown-link">Services</a>
+                <a href="#" class="dropdown-link">Testimonials</a>
+              </div>
+            </li>
+            <li class="nav-link dropdown-item" tabindex="0">
+              Shop
+              <div class="dropdown-menu dropdown-menu-shop">
+                <a href="#" class="dropdown-link">Apparel</a>
+                <a href="#" class="dropdown-link">Equipment</a>
+                <a href="#" class="dropdown-link">Accessories</a>
+              </div>
+            </li>
+            <li class="nav-link dropdown-item" tabindex="0">
+              About
+              <div class="dropdown-menu dropdown-menu-about">
+                <a href="#" class="dropdown-link">Our Story</a>
+                <a href="#" class="dropdown-link">Vision</a>
+                <a href="#" class="dropdown-link">Team</a>
+              </div>
+            </li>
+            <li class="nav-link dropdown-item" tabindex="0">
+              Contact
+              <div class="dropdown-menu dropdown-menu-contact">
+                <a href="#" class="dropdown-link">Contact Us</a>
+                <a href="#" class="dropdown-link">Support</a>
+                <a href="#" class="dropdown-link">FAQs</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="welcome">
-            <h2 class="welcome-title">Start training for yourself today!</h2>
-            <p class="welcome-text">Everything what you need for your training process in one place.</p>
-            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
-            <button class="email-btn">Sign Up</button>
+      <section class="welcome">
+        <h2 class="welcome-title">Start training for yourself today!</h2>
+        <p class="welcome-text">
+          Everything what you need for your training process in one place.
+        </p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          autocomplete="off"
+        />
+        <button class="email-btn">Sign Up</button>
 
-            <div id="modal-overlay"></div>
+        <div id="modal-overlay"></div>
 
-            <div id="modal-container-one">
-                <div id="modal-one">
-                    <p class="modal-text-one">Please enter your email address to sign up.</p>
-                    <div id="close-btn-one"><i class="fa-solid fa-xmark"></i></div>
-                </div>
+        <div id="modal-container-one" class="modal-container-one">
+          <div id="modal-one">
+            <p class="modal-text-one">
+              Please enter your email address to sign up.
+            </p>
+            <div id="close-btn-one"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+
+        <div id="modal-container-two">
+          <div id="modal-two">
+            <p class="modal-text-two">Please enter a valid email address.</p>
+            <div id="close-btn-two"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+
+        <div id="modal-container-three">
+          <div id="modal-three">
+            <p class="modal-text-three">
+              Thank you for providing your email address. You're all set!
+            </p>
+            <div id="close-btn-three"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-info">
+        <div class="container-main">
+          <div class="box-main">
+            <div class="text">
+              <h3>Welcome to Gym Bro</h3>
+              <p>
+                At Gym Bro, we understand the profound impact that top-quality
+                sport equipment can have on your performance. Whether you're a
+                seasoned athlete or just starting your fitness journey, having
+                the right gear can make all the difference. That's why we've
+                curated a comprehensive selection of premium sport equipment
+                designed to elevate your game and help you achieve your goals.
+              </p>
             </div>
-
-            <div id="modal-container-two">
-                <div id="modal-two">
-                    <p class="modal-text-two">Please enter a valid email address.</p>
-                    <div id="close-btn-two"><i class="fa-solid fa-xmark"></i></div>
-                </div>
+            <div class="image">
+              <img src="images/athlete.jpg" alt="athlete" />
             </div>
+          </div>
 
-            <div id="modal-container-three">
-                <div id="modal-three">
-                    <p class="modal-text-three">Thank you for providing your email address. You're all set!</p>
-                    <div id="close-btn-three"><i class="fa-solid fa-xmark"></i></div>
-                </div>
+          <div class="box-main">
+            <div class="image">
+              <img src="images/equipment.jpg" alt="equipment" />
             </div>
-        </section>
-
-        <section class="main-info">
-            <div class="container-main">
-                <div class="box-main">
-                    <div class="text">
-                        <h3>Welcome to Gym Bro</h3>
-                        <p>At Gym Bro, we understand the profound impact that top-quality sport equipment 
-                        can have on your performance. Whether you're a seasoned athlete or just starting your fitness journey, 
-                        having the right gear can make all the difference. That's why we've curated a comprehensive 
-                        selection of premium sport equipment designed to elevate your game and help you achieve your goals.</p>
-                    </div>
-                    <div class="image">
-                        <img src="images/athlete.jpg" alt="athlete">
-                    </div>
-                </div>
-
-                <div class="box-main">
-                    <div class="image">
-                        <img src="images/equipment.jpg" alt="equipment">
-                    </div>
-                    <div class="text">
-                        <h3>Our Products</h3>
-                        <p>Whether you're into team sports like basketball or soccer, individual pursuits like running or cycling, 
-                        or niche activities like rock climbing or surfing, we have everything you need to reach your full potential. 
-                        From apparel and footwear to accessories and training aids, our extensive selection has something for every athlete.</p>
-                    </div>
-                </div>
-
-                <div class="box-main">
-                    <div class="text">
-                        <h3>Discover Your Potential</h3>
-                        <p>Ready to take your performance to the next level? Explore our collection 
-                        of premium sport equipment and unlock your true athletic potential. Whether you're aiming for 
-                        personal bests, podium finishes, or simply enjoying the thrill of competition, Gym Bro 
-                        has everything you need to succeed. Join the countless athletes who trust Gym Bro for their training 
-                        and competition needs. Shop now and experience the difference firsthand.</p>
-                    </div>
-                    <div class="image">
-                        <img src="images/woman.jpg" alt="woman">
-                    </div>
-                </div>
+            <div class="text">
+              <h3>Our Products</h3>
+              <p>
+                Whether you're into team sports like basketball or soccer,
+                individual pursuits like running or cycling, or niche activities
+                like rock climbing or surfing, we have everything you need to
+                reach your full potential. From apparel and footwear to
+                accessories and training aids, our extensive selection has
+                something for every athlete.
+              </p>
             </div>
-        </section>
+          </div>
 
-        <section class="testemonials">
-            <div class="container-testemonials">
-                <div class="box-testemonials">
-                    <div class="circle">
-                        <img src="images/rob.png" alt="rob">
-                    </div>
-                    <div class="text-testemonials">
-                        <h4 class="name">Rob</h4>
-                        <p>Ever since I stumbled upon this sports equipment shop, my athletic journey has 
-                        transformed completely. What sets this shop apart is not just the range of products 
-                        they offer, but the personalized guidance I received from their knowledgeable team.</p>
-                    </div>
-                </div>
-
-                <div class="box-testemonials">
-                    <div class="circle">
-                        <img src="images/natasha.png" alt="">
-                    </div>
-                    <div class="text-testemonials">
-                        <h4 class="name">Natasha</h4>
-                        <p>As an avid runner, finding the right sports equipment is crucial for my performance
-                        and overall enjoyment of the sport. That's why I'm thrilled to share my experience with 
-                        this incredible sports equipment shop. From the moment I started browsing their website, 
-                        I was impressed by the wide selection of running gear available.</p>
-                    </div>
-                </div>
-
-                <div class="box-testemonials">
-                    <div class="circle">
-                        <img src="images/andy.png" alt="">
-                    </div>
-                    <div class="text-testemonials">
-                        <h4 class="name">Andy</h4>
-                        <p>Discovering this sports equipment shop has been an absolute game-changer for me. 
-                        As someone who's passionate about staying active and exploring various sports, finding 
-                        reliable gear is essential.What truly impressed me, though, was the level of expertise 
-                        and personalized assistance I received from their team.</p>
-                    </div>
-                </div>
-
-                <div class="box-testemonials">
-                    <div class="circle">
-                        <img src="images/alice.png" alt="">
-                    </div>
-                    <div class="text-testemonials">
-                        <h4 class="name">Alice</h4>
-                        <p>From a casual weekend warrior to a dedicated fitness enthusiast, this sports equipment 
-                        shop has been my go-to destination for all things sports-related. As someone who values both 
-                        quality and affordability, I've been consistently impressed by the wide range of products 
-                        offered by this shop.</p>
-                    </div>
-                </div>
+          <div class="box-main">
+            <div class="text">
+              <h3>Discover Your Potential</h3>
+              <p>
+                Ready to take your performance to the next level? Explore our
+                collection of premium sport equipment and unlock your true
+                athletic potential. Whether you're aiming for personal bests,
+                podium finishes, or simply enjoying the thrill of competition,
+                Gym Bro has everything you need to succeed. Join the countless
+                athletes who trust Gym Bro for their training and competition
+                needs. Shop now and experience the difference firsthand.
+              </p>
             </div>
-        </section>
-
-        <section class="faq">
-            <div class="container-faq">
-                <div class="box-faq">
-                    <div class="question">
-                        <h5>What types of sport equipment do you offer?</h5>
-                    </div>
-                    <div class="answer">
-                        <p>We offer a wide range of sport equipment catering to various sports including 
-                        but not limited to soccer, basketball, tennis, volleyball, swimming, cycling, 
-                        running, and more. Our inventory encompasses everything from apparel and footwear 
-                        to accessories and gear specific to each sport.</p> 
-                    </div>
-                </div>
-
-                <div class="box-faq">
-                    <div class="question">
-                        <h5>Are your products suitable for both beginners and professionals?</h5>
-                    </div>
-                    <div class="answer">
-                        <p>Yes, our products are designed to meet the needs of individuals at all skill levels,
-                        from beginners to seasoned professionals. We offer equipment suitable for recreational 
-                        use as well as high-performance gear trusted by elite athletes.</p> 
-                    </div>
-                </div>
-
-                <div class="box-faq">
-                    <div class="question">
-                        <h5>How can I determine the right size for the sport equipment I want to purchase?</h5>
-                    </div>
-                    <div class="answer">
-                       <p>We provide detailed sizing guides for most of our products to help you find 
-                    the perfect fit. These guides typically include measurements and recommendations based on 
-                    factors such as height, weight, and body type. If you need further assistance, our 
-                    customer service team is always available to help you with sizing queries.</p> 
-                    </div>
-                </div>
-
-                <div class="box-faq">
-                    <div class="question">
-                        <h5>What payment methods do you accept?</h5>
-                    </div>
-                    <div class="answer">
-                       <p>We accept various payment methods including credit/debit cards, PayPal, 
-                        and other secure online payment gateways. Additionally, we may offer alternative 
-                        payment options such as installment plans or financing depending on your location 
-                        and the nature of your purchase.</p> 
-                    </div>
-                </div>
-
-                <div class="box-faq">
-                        <div class="question">
-                            <h5>How long does shipping take?</h5>
-                        </div>
-                        <div class="answer">
-                        <p>Shipping times may vary depending on your location, the shipping method selected, 
-                            and product availability. Typically, orders are processed within 1-2 business days, 
-                            and standard shipping times range from 3-7 business days. Expedited shipping options 
-                            are also available for faster delivery.</p> 
-                        </div>
-                </div>
+            <div class="image">
+              <img src="images/woman.jpg" alt="woman" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="testemonials">
+        <div class="container-testemonials">
+          <div class="box-testemonials">
+            <div class="circle">
+              <img src="images/rob.png" alt="rob" />
+            </div>
+            <div class="text-testemonials">
+              <h4 class="name">Rob</h4>
+              <p>
+                Ever since I stumbled upon this sports equipment shop, my
+                athletic journey has transformed completely. What sets this shop
+                apart is not just the range of products they offer, but the
+                personalized guidance I received from their knowledgeable team.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-testemonials">
+            <div class="circle">
+              <img src="images/natasha.png" alt="" />
+            </div>
+            <div class="text-testemonials">
+              <h4 class="name">Natasha</h4>
+              <p>
+                As an avid runner, finding the right sports equipment is crucial
+                for my performance and overall enjoyment of the sport. That's
+                why I'm thrilled to share my experience with this incredible
+                sports equipment shop. From the moment I started browsing their
+                website, I was impressed by the wide selection of running gear
+                available.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-testemonials">
+            <div class="circle">
+              <img src="images/andy.png" alt="" />
+            </div>
+            <div class="text-testemonials">
+              <h4 class="name">Andy</h4>
+              <p>
+                Discovering this sports equipment shop has been an absolute
+                game-changer for me. As someone who's passionate about staying
+                active and exploring various sports, finding reliable gear is
+                essential.What truly impressed me, though, was the level of
+                expertise and personalized assistance I received from their
+                team.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-testemonials">
+            <div class="circle">
+              <img src="images/alice.png" alt="" />
+            </div>
+            <div class="text-testemonials">
+              <h4 class="name">Alice</h4>
+              <p>
+                From a casual weekend warrior to a dedicated fitness enthusiast,
+                this sports equipment shop has been my go-to destination for all
+                things sports-related. As someone who values both quality and
+                affordability, I've been consistently impressed by the wide
+                range of products offered by this shop.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container-faq">
+          <div class="box-faq">
+            <div class="question">
+              <h5>What types of sport equipment do you offer?</h5>
+            </div>
+            <div class="answer">
+              <p>
+                We offer a wide range of sport equipment catering to various
+                sports including but not limited to soccer, basketball, tennis,
+                volleyball, swimming, cycling, running, and more. Our inventory
+                encompasses everything from apparel and footwear to accessories
+                and gear specific to each sport.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-faq">
+            <div class="question">
+              <h5>
+                Are your products suitable for both beginners and professionals?
+              </h5>
+            </div>
+            <div class="answer">
+              <p>
+                Yes, our products are designed to meet the needs of individuals
+                at all skill levels, from beginners to seasoned professionals.
+                We offer equipment suitable for recreational use as well as
+                high-performance gear trusted by elite athletes.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-faq">
+            <div class="question">
+              <h5>
+                How can I determine the right size for the sport equipment I
+                want to purchase?
+              </h5>
+            </div>
+            <div class="answer">
+              <p>
+                We provide detailed sizing guides for most of our products to
+                help you find the perfect fit. These guides typically include
+                measurements and recommendations based on factors such as
+                height, weight, and body type. If you need further assistance,
+                our customer service team is always available to help you with
+                sizing queries.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-faq">
+            <div class="question">
+              <h5>What payment methods do you accept?</h5>
+            </div>
+            <div class="answer">
+              <p>
+                We accept various payment methods including credit/debit cards,
+                PayPal, and other secure online payment gateways. Additionally,
+                we may offer alternative payment options such as installment
+                plans or financing depending on your location and the nature of
+                your purchase.
+              </p>
+            </div>
+          </div>
+
+          <div class="box-faq">
+            <div class="question">
+              <h5>How long does shipping take?</h5>
+            </div>
+            <div class="answer">
+              <p>
+                Shipping times may vary depending on your location, the shipping
+                method selected, and product availability. Typically, orders are
+                processed within 1-2 business days, and standard shipping times
+                range from 3-7 business days. Expedited shipping options are
+                also available for faster delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container-footer">
-            <h6 class="title-social-links">Our social links</h6>
+      <div class="container-footer">
+        <h6 class="title-social-links">Our social links</h6>
 
-            <div class="container-social">
-                <div class="social-links">   
-                    <div class="tooltip">Instagram</div>             
-                    <a href="#" aria-label="Link to your Instagram"><i class="fa-brands fa-instagram"></i></a>               
-                </div>
+        <div class="container-social">
+          <div class="social-links">
+            <div class="tooltip">Instagram</div>
+            <a href="#" aria-label="Link to your Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
 
-                <div class="social-links">  
-                    <div class="tooltip">Youtube</div>                     
-                    <a href="#" aria-label="Link to your Youtube channel"><i class="fa-brands fa-youtube"></i></a>               
-                </div>
+          <div class="social-links">
+            <div class="tooltip">Youtube</div>
+            <a href="#" aria-label="Link to your Youtube channel"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
 
-                <div class="social-links"> 
-                    <div class="tooltip">X (Twitter)</div>                            
-                    <a href="#" aria-label="Link to your X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>                
-                </div>
+          <div class="social-links">
+            <div class="tooltip">X (Twitter)</div>
+            <a href="#" aria-label="Link to your X (Twitter)"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
 
-                <div class="social-links"> 
-                    <div class="tooltip">Facebook</div>                            
-                    <a href="#" aria-label="Link to your Facebook"><i class="fa-brands fa-facebook"></i></a>               
-                </div>
+          <div class="social-links">
+            <div class="tooltip">Facebook</div>
+            <a href="#" aria-label="Link to your Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
 
-                <div class="social-links">
-                    <div class="tooltip">Telegram</div>                         
-                    <a href="#" aria-label="Link to your Telegram"><i class="fa-brands fa-telegram"></i></a>
-                </div>
-            </div>
+          <div class="social-links">
+            <div class="tooltip">Telegram</div>
+            <a href="#" aria-label="Link to your Telegram"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="js/email.js"></script>
     <script src="js/accordion.js"></script>
-</body>
+  </body>
 </html>
