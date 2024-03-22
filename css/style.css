@@ -259,7 +259,7 @@ p {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 700px;
+  min-width: 750px;
   height: 10%;
   border-radius: 10px;
   display: flex;
@@ -279,6 +279,12 @@ p {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.welcome #modal-one #close-btn-one:hover {
+  transform: rotate(360deg);
 }
 
 @keyframes modalOneStart {
@@ -335,6 +341,12 @@ p {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.welcome #modal-two #close-btn-two:hover {
+  transform: rotate(360deg);
 }
 
 @keyframes modalTwoStart {
@@ -392,6 +404,12 @@ p {
   font-size: 2rem;
   cursor: pointer;
   margin-right: 0.5em;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.welcome #modal-three #close-btn-three:hover {
+  transform: rotate(360deg);
 }
 
 @keyframes modalThreeStart {
