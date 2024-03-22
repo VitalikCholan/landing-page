@@ -1,17 +1,17 @@
-const emailInput = document.getElementById("email");
-const emailBtn = document.getElementsByClassName("email-btn")[0];
+const emailInput = document.querySelector("#email");
+const emailBtn = document.querySelector(".email-btn");
 
-const modalOverlay = document.getElementById("modal-overlay");
+const modalOverlay = document.querySelector(".modal-overlay");
 
-const modalContainerOne = document.getElementById("modal-container-one");
-const modalOne = document.getElementById("modal-one");
-const closeBtnOne = document.getElementById("close-btn-one");
-const modalContainerTwo = document.getElementById("modal-container-two");
-const modalTwo = document.getElementById("modal-two");
-const closeBtnTwo = document.getElementById("close-btn-two");
-const modalContainerThree = document.getElementById("modal-container-three");
-const modalThree = document.getElementById("modal-three");
-const closeBtnThree = document.getElementById("close-btn-three");
+const modalContainerOne = document.querySelector(".modal-container-one");
+const modalOne = document.querySelector(".modal-one");
+const closeBtnOne = document.querySelector(".close-btn-one");
+const modalContainerTwo = document.querySelector(".modal-container-two");
+const modalTwo = document.querySelector(".modal-two");
+const closeBtnTwo = document.querySelector(".close-btn-two");
+const modalContainerThree = document.querySelector(".modal-container-three");
+const modalThree = document.querySelector(".modal-three");
+const closeBtnThree = document.querySelector(".close-btn-three");
 
 const emailRegEx = /([\w\.-]+)@([\w-]+)\.([a-z]{3,8})$/;
 
