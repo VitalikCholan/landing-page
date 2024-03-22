@@ -229,7 +229,7 @@ p {
   transform: scale(1);
 }
 
-.welcome #modal-overlay {
+.welcome .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -248,12 +248,12 @@ p {
   }
 }
 
-.welcome #modal-container-one {
+.modal-container-one {
   display: none;
   z-index: 1;
 }
 
-.welcome #modal-one {
+.modal-container-one .modal-one {
   background-color: #0843a0;
   position: fixed;
   top: 20%;
@@ -268,22 +268,25 @@ p {
   animation: modalOneStart 500ms ease-in-out forwards;
 }
 
-.welcome #modal-one .modal-text-one {
+.modal-one .modal-text-one {
   color: #00ffff;
   font-size: 1.5rem;
   text-wrap: balance;
-  padding: 0;
+  padding-left: 0.4em;
 }
 
-.welcome #modal-one #close-btn-one {
+.modal-one .close-btn-one {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
+  padding: 0.4em;
+  width: 24px;
+  height: 36px;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
 }
 
-.welcome #modal-one #close-btn-one:hover {
+.modal-one .close-btn-one:hover {
   transform: rotate(360deg);
 }
 
@@ -310,12 +313,12 @@ p {
   }
 }
 
-.welcome #modal-container-two {
+.welcome .modal-container-two {
   display: none;
   z-index: 1;
 }
 
-.welcome #modal-two {
+.welcome .modal-two {
   background-color: #0843a0;
   position: fixed;
   top: 17%;
@@ -330,22 +333,25 @@ p {
   animation: modalTwoStart 500ms ease-in-out forwards;
 }
 
-.welcome #modal-two .modal-text-two {
+.welcome .modal-two .modal-text-two {
   color: #00ffff;
   font-size: 1.5rem;
   text-wrap: balance;
-  padding: 0;
+  padding-left: 0.4em;
 }
 
-.welcome #modal-two #close-btn-two {
+.welcome .modal-two .close-btn-two {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
+  padding: 0.4em;
+  width: 24px;
+  height: 36px;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
 }
 
-.welcome #modal-two #close-btn-two:hover {
+.welcome .modal-two .close-btn-two:hover {
   transform: rotate(360deg);
 }
 
@@ -372,12 +378,12 @@ p {
   }
 }
 
-.welcome #modal-container-three {
+.welcome .modal-container-three {
   display: none;
   z-index: 1;
 }
 
-.welcome #modal-three {
+.welcome .modal-three {
   background-color: #0843a0;
   position: fixed;
   top: 17%;
@@ -392,23 +398,25 @@ p {
   animation: modalThreeStart 500ms ease-in-out forwards;
 }
 
-.welcome #modal-three .modal-text-three {
+.welcome .modal-three .modal-text-three {
   color: #00ffff;
   font-size: 1.5rem;
   text-wrap: balance;
-  padding: 0;
+  padding-left: 0.4em;
 }
 
-.welcome #modal-three #close-btn-three {
+.welcome .modal-three .close-btn-three {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
-  margin-right: 0.5em;
+  padding: 0.8em;
+  width: 24px;
+  height: 36px;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
 }
 
-.welcome #modal-three #close-btn-three:hover {
+.welcome .modal-three .close-btn-three:hover {
   transform: rotate(360deg);
 }
 
@@ -684,21 +692,22 @@ p {
 }
 
 @media screen and (max-width: 650px) {
-  .welcome #modal-two {
+  .welcome .modal-two {
     height: 15%;
     min-width: 450px;
   }
 
-  .welcome #modal-two #close-btn-two {
-    margin-right: 0.5em;
+  .welcome .modal-two .modal-text-two {
+    padding: 0;
   }
 
-  .welcome #modal-three {
+  .welcome .modal-three {
     min-width: 480px;
+    height: 20%;
   }
 
-  .welcome #modal-two #close-btn-two {
-    margin-left: 0.5em;
+  .welcome .modal-three .close-btn-three {
+    padding: 0.4em;
   }
 }
 
@@ -721,13 +730,9 @@ p {
     margin-top: 1em;
   }
 
-  .welcome #modal-one {
+  .welcome .modal-one {
     min-width: 450px;
     height: 15%;
-  }
-
-  .welcome #modal-one #close-btn-one {
-    margin-right: 0.5em;
   }
 
   .box-main {
