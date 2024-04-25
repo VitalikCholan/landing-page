@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Signika Negative", sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   color: #ffffff;
 }
 
@@ -76,7 +76,7 @@ p {
 }
 
 .nav-link::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -160,7 +160,7 @@ p {
 
 /* Made text more readable on background image*/
 .welcome::after {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #1d5795;
   inset: 0;
@@ -212,7 +212,7 @@ p {
 }
 
 .welcome .email-btn::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -467,7 +467,7 @@ p {
   margin: 0 2em;
 }
 
-.box-main .image img {
+.box-main .image-main img {
   width: 100%;
   height: 100%;
 }
@@ -505,6 +505,57 @@ p {
   font-size: 1.2rem;
 }
 
+.scroller {
+  max-width: 1350px;
+}
+
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 5%,
+    white 95%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 5%, white 95%, transparent);
+}
+
+.scroller_inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated='true'] .scroller_inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s reverse linear infinite;
+}
+
+.box-partner {
+  background-color: #004acb;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #003c7b;
+}
+
+.box-partner img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.box-partner .partner-name {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
 .container-faq {
   display: flex;
   flex-direction: column;
@@ -533,7 +584,7 @@ p {
 }
 
 .box-faq .question::after {
-  content: "+";
+  content: '+';
   font-size: 2rem;
   position: absolute;
   right: 0px;
@@ -552,7 +603,7 @@ p {
 }
 
 .box-faq.active .question::after {
-  content: "-";
+  content: '-';
   font-size: 2rem;
   position: absolute;
   right: 0px;
@@ -635,7 +686,7 @@ p {
 }
 
 .container-social .social-links .tooltip::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 15px;
   width: 15px;
@@ -657,8 +708,8 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-areas:
-      "instagram . youtube . x"
-      ". facebook . telegram .";
+      'instagram . youtube . x'
+      '. facebook . telegram .';
   }
 
   .social-links:nth-child(1) {
@@ -741,7 +792,7 @@ p {
   }
 
   .box-main .text,
-  .box-main .image {
+  .box-main .image-main {
     width: 100%;
   }
 
@@ -756,6 +807,45 @@ p {
   .container-testemonials {
     display: flex;
     flex-direction: column;
+  }
+
+  .scroller {
+    max-height: 1200px;
+    background-color: #004acb;
+  }
+
+  .scroller_inner {
+    background-color: white;
+    padding: 0 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .scroller[data-animated='true'] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      180deg,
+      transparent,
+      white 5%,
+      white 95%,
+      transparent
+    );
+    mask: linear-gradient(
+      180deg,
+      transparent,
+      white 5%,
+      white 95%,
+      transparent
+    );
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translateY(calc(-50% - 0.5rem));
+    }
   }
 
   .container-footer {
@@ -779,7 +869,7 @@ p {
   }
 
   .box-main .text,
-  .box-main .image {
+  .box-main .image-main {
     width: 100%;
   }
 
