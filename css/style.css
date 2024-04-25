@@ -536,6 +536,13 @@ p {
 
 .box-partner {
   background-color: #004acb;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #003c7b;
+}
+
+.box-partner img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .box-partner .partner-name {
