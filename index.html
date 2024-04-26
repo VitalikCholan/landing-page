@@ -62,18 +62,20 @@
 
     <main>
       <section class="welcome">
-        <h2 class="welcome-title">Start training for yourself today!</h2>
-        <p class="welcome-text">
-          Everything what you need for your training process in one place.
-        </p>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          autocomplete="off"
-        />
-        <button class="email-btn">Subscribe</button>
+        <div class="hidden-welcome">
+          <h2 class="welcome-title">Start training for yourself today!</h2>
+          <p class="welcome-text">
+            Everything what you need for your training process in one place.
+          </p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <button class="email-btn">Subscribe</button>
+        </div>
 
         <div class="modal-overlay"></div>
 
@@ -416,6 +418,7 @@
       </div>
     </footer>
 
+    <script src="js/scrollAnimation.js"></script>
     <script src="js/email.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/accordion.js"></script>

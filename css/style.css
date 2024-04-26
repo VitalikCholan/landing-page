@@ -229,6 +229,19 @@ p {
   transform: scale(1);
 }
 
+.hidden-welcome {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100px);
+  transition: all 1s;
+}
+
+.show-welcome {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
 .welcome .modal-overlay {
   position: fixed;
   top: 0;
@@ -883,5 +896,11 @@ p {
 
   .container-testemonials > * {
     flex-basis: 33%;
+  }
+}
+
+@media (prefer-reduced-motion) {
+  .hidden-welcome {
+    transition: none;
   }
 }
