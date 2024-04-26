@@ -62,18 +62,20 @@
 
     <main>
       <section class="welcome">
-        <h2 class="welcome-title">Start training for yourself today!</h2>
-        <p class="welcome-text">
-          Everything what you need for your training process in one place.
-        </p>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          autocomplete="off"
-        />
-        <button class="email-btn">Subscribe</button>
+        <div class="hidden-welcome">
+          <h2 class="welcome-title">Start training for yourself today!</h2>
+          <p class="welcome-text">
+            Everything what you need for your training process in one place.
+          </p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            autocomplete="off"
+          />
+          <button class="email-btn">Subscribe</button>
+        </div>
 
         <div class="modal-overlay"></div>
 
@@ -108,7 +110,7 @@
       <section class="main-info">
         <div class="container-main">
           <div class="box-main">
-            <div class="text">
+            <div class="text hidden-main-left">
               <h3>Welcome to Gym Bro</h3>
               <p>
                 At Gym Bro, we understand the profound impact that top-quality
@@ -119,16 +121,16 @@
                 designed to elevate your game and help you achieve your goals.
               </p>
             </div>
-            <div class="image-main">
+            <div class="image-main hidden-main-right">
               <img src="images/athlete.jpg" alt="athlete" />
             </div>
           </div>
 
           <div class="box-main">
-            <div class="image-main">
+            <div class="image-main hidden-main-left">
               <img src="images/equipment.jpg" alt="equipment" />
             </div>
-            <div class="text">
+            <div class="text hidden-main-right">
               <h3>Our Products</h3>
               <p>
                 Whether you're into team sports like basketball or soccer,
@@ -142,7 +144,7 @@
           </div>
 
           <div class="box-main">
-            <div class="text">
+            <div class="text hidden-main-left">
               <h3>Discover Your Potential</h3>
               <p>
                 Ready to take your performance to the next level? Explore our
@@ -154,7 +156,7 @@
                 needs. Shop now and experience the difference firsthand.
               </p>
             </div>
-            <div class="image-main">
+            <div class="image-main hidden-main-right">
               <img src="images/woman.jpg" alt="woman" />
             </div>
           </div>
@@ -416,6 +418,7 @@
       </div>
     </footer>
 
+    <script src="js/scrollAnimation.js"></script>
     <script src="js/email.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/accordion.js"></script>
