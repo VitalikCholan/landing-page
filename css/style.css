@@ -684,6 +684,32 @@ p {
   top: -5px;
 }
 
+.hidden-faq-odd {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show-faq-odd {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden-faq-even {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 2s;
+}
+
+.show-faq-even {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .container-footer {
   background-color: #0843a0;
   display: flex;

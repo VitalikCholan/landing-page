@@ -18,6 +18,10 @@ const observer = new IntersectionObserver(
           targetElement.classList.contains('hidden-testemonial-right')
         ) {
           targetElement.classList.add('show-testemonial-right');
+        } else if (targetElement.classList.contains('hidden-faq-odd')) {
+          targetElement.classList.add('show-faq-odd');
+        } else if (targetElement.classList.contains('hidden-faq-even')) {
+          targetElement.classList.add('show-faq-even');
         }
       } else {
         entry.target.classList.remove(
@@ -25,7 +29,9 @@ const observer = new IntersectionObserver(
           'show-main-left',
           'show-main-right',
           'show-testemonial-left',
-          'show-testemonial-right'
+          'show-testemonial-right',
+          'show-faq-odd',
+          'show-faq-even'
         );
       }
     });
@@ -53,3 +59,9 @@ const testemonialRightElements = document.querySelectorAll(
   '.hidden-testemonial-right'
 );
 testemonialRightElements.forEach((element) => observer.observe(element));
+
+const faqOddElements = document.querySelectorAll('.hidden-faq-odd');
+faqOddElements.forEach((element) => observer.observe(element));
+
+const faqEvenElements = document.querySelectorAll('.hidden-faq-even');
+faqEvenElements.forEach((element) => observer.observe(element));
