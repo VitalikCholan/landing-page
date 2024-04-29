@@ -68,7 +68,7 @@ p {
 .container-header .dropdown .nav-link {
   list-style-type: none;
   padding: 0 0.5em;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.0577rem + 0.5897vw, 1.5rem);
   text-decoration: none;
   letter-spacing: 4px;
   color: #ffffff;
@@ -140,7 +140,7 @@ p {
 
 .dropdown-link {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.9052rem + 0.3931vw, 1.2rem);
 }
 
 .dropdown-link:hover {
@@ -170,7 +170,7 @@ p {
 }
 
 .welcome .welcome-title {
-  font-size: 4rem;
+  font-size: clamp(3rem, 2.5258rem + 1.9656vw, 4rem);
   text-transform: uppercase;
   margin: 0 0.5em;
   text-wrap: balance;
@@ -964,6 +964,10 @@ p {
     font-size: 1rem;
   }
 
+  .welcome input {
+    width: auto;
+  }
+
   .container-footer .waves {
     height: 1400px;
   }
@@ -1004,6 +1008,12 @@ p {
 
   .container-social .social-links:hover .tooltip {
     top: -40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-partner {
+    max-width: 300px;
   }
 }
 
