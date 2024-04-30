@@ -646,7 +646,7 @@ p {
 }
 
 .box-faq .question {
-  font-size: 1.7rem;
+  font-size: clamp(1.4rem, 1.2577rem + 0.5897vw, 1.7rem);
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -667,7 +667,7 @@ p {
 }
 
 .box-faq .answer {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.9052rem + 0.3931vw, 1.2rem);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
@@ -1011,8 +1011,63 @@ p {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .container-footer .title-social-links {
+    margin-block-end: 1.5em;
+  }
+
+  .container-footer .container-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+    grid-template-areas:
+      '. instagram'
+      'youtube .'
+      '. facebook'
+      'telegram .'
+      '. x';
+  }
+
+  .social-links:nth-child(1) {
+    grid-area: instagram;
+  }
+
+  .social-links:nth-child(2) {
+    grid-area: youtube;
+  }
+
+  .social-links:nth-child(3) {
+    grid-area: x;
+  }
+
+  .social-links:nth-child(4) {
+    grid-area: facebook;
+  }
+
+  .social-links:nth-child(5) {
+    grid-area: telegram;
+  }
+
+  .container-social .social-links .tooltip {
+    font-size: 1rem;
+    padding: 0.3em;
+  }
+
+  .container-social .social-links:hover .tooltip {
+    top: -40px;
+  }
+
+  .container-footer .waves {
+    height: 2100px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .box-partner {
+    max-width: 300px;
+  }
+
+  .box-faq {
     max-width: 300px;
   }
 }
