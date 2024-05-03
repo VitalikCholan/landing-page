@@ -122,13 +122,41 @@
               </p>
             </div>
             <div class="image-main hidden-main-right">
-              <img src="images/athlete.jpg" alt="athlete" />
+              <picture>
+                <source
+                  media="(max-width: 900px)"
+                  srcset="images/athlete-big.jpg"
+                />
+                <source
+                  media="(max-width: 700px)"
+                  srcset="images/athlete.jpg"
+                />
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/athlete-small.jpg"
+                />
+                <img src="images/athlete.jpg" alt="athlete" />
+              </picture>
             </div>
           </div>
 
           <div class="box-main">
             <div class="image-main hidden-main-left">
-              <img src="images/equipment.jpg" alt="equipment" />
+              <picture>
+                <source
+                  media="(max-width: 900px)"
+                  srcset="images/equipment.jpg"
+                />
+                <source
+                  media="(max-width: 700px)"
+                  srcset="images/equipment.jpg"
+                />
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/equipment.jpg"
+                />
+                <img src="images/equipment.jpg" alt="equipment" />
+              </picture>
             </div>
             <div class="text hidden-main-right">
               <h3>Our Products</h3>
@@ -167,7 +195,7 @@
         <div class="container-testemonials">
           <div class="box-testemonials hidden-testemonial-left">
             <div class="circle">
-              <img src="images/rob.png" alt="rob" />
+              <img src="images/rob.jpg" alt="rob" />
             </div>
             <div class="text-testemonials">
               <h4 class="name">Rob</h4>
@@ -182,7 +210,7 @@
 
           <div class="box-testemonials hidden-testemonial-left">
             <div class="circle">
-              <img src="images/natasha.png" alt="" />
+              <img src="images/natasha.jpg" alt="" />
             </div>
             <div class="text-testemonials">
               <h4 class="name">Natasha</h4>
@@ -199,7 +227,7 @@
 
           <div class="box-testemonials hidden-testemonial-right">
             <div class="circle">
-              <img src="images/andy.png" alt="" />
+              <img src="images/andy.jpg" alt="" />
             </div>
             <div class="text-testemonials">
               <h4 class="name">Andy</h4>
@@ -216,7 +244,7 @@
 
           <div class="box-testemonials hidden-testemonial-right">
             <div class="circle">
-              <img src="images/alice.png" alt="" />
+              <img src="images/alice.jpg" alt="" />
             </div>
             <div class="text-testemonials">
               <h4 class="name">Alice</h4>
@@ -479,9 +507,9 @@
       </div>
     </footer>
 
-    <script src="js/scrollAnimation.js"></script>
-    <script src="js/email.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/accordion.js"></script>
+    <script defer src="js/scrollAnimation.js"></script>
+    <script defer src="js/email.js"></script>
+    <script defer src="js/carousel.js"></script>
+    <script defer src="js/accordion.js"></script>
   </body>
 </html>
