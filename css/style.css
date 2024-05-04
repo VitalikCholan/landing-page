@@ -810,6 +810,10 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
+  .welcome {
+    background-image: url(../images/gym-1000.jpg);
+  }
+
   .box-main {
     display: flex;
     flex-direction: column;
@@ -834,6 +838,10 @@ p {
 }
 
 @media screen and (max-width: 820px) {
+  .welcome {
+    background-image: url(../images/gym-820.jpg);
+  }
+
   .container-header {
     display: flex;
     flex-direction: column;
@@ -873,11 +881,6 @@ p {
 
   .box-main img {
     display: block;
-  }
-
-  .container-testemonials {
-    display: flex;
-    flex-direction: column;
   }
 
   .scroller {
@@ -958,6 +961,10 @@ p {
 }
 
 @media screen and (max-width: 610px) {
+  .welcome {
+    background-image: url(../images/gym-610.jpg);
+  }
+
   .dropdown-menu:nth-child(1) {
     padding: 0.5em;
     margin-left: 0.3em;
@@ -1012,6 +1019,11 @@ p {
 }
 
 @media screen and (max-width: 550px) {
+  .container-testemonials {
+    display: flex;
+    flex-direction: column;
+  }
+
   .container-footer .title-social-links {
     margin-block-end: 1.5em;
   }
@@ -1063,6 +1075,10 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  .welcome {
+    background-image: url(../images/gym-480.jpg);
+  }
+
   .box-partner {
     max-width: 300px;
   }

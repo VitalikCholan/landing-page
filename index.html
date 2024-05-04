@@ -122,13 +122,41 @@
               </p>
             </div>
             <div class="image-main hidden-main-right">
-              <img src="images/athlete.jpg" alt="athlete" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/athlete-small.jpg"
+                />
+                <source
+                  media="(max-width: 700px)"
+                  srcset="images/athlete.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/athlete-big.jpg"
+                />
+                <img src="images/athlete.jpg" alt="athlete" />
+              </picture>
             </div>
           </div>
 
           <div class="box-main">
             <div class="image-main hidden-main-left">
-              <img src="images/equipment.jpg" alt="equipment" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/equipment-small.jpg"
+                />
+                <source
+                  media="(max-width: 700px)"
+                  srcset="images/equipment.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/equipment-big.jpg"
+                />
+                <img src="images/equipment.jpg" alt="equipment" />
+              </picture>
             </div>
             <div class="text hidden-main-right">
               <h3>Our Products</h3>
@@ -157,7 +185,18 @@
               </p>
             </div>
             <div class="image-main hidden-main-right">
-              <img src="images/woman.jpg" alt="woman" />
+              <picture>
+                <source
+                  media="(max-width: 500px)"
+                  srcset="images/woman-small.jpg"
+                />
+                <source media="(max-width: 700px)" srcset="images/woman.jpg" />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/woman-big.jpg"
+                />
+                <img src="images/woman.jpg" alt="woman" />
+              </picture>
             </div>
           </div>
         </div>
@@ -167,7 +206,22 @@
         <div class="container-testemonials">
           <div class="box-testemonials hidden-testemonial-left">
             <div class="circle">
-              <img src="images/rob.png" alt="rob" />
+              <picture>
+                <source
+                  media="(max-width: 400px)"
+                  srcset="images/rob-small.jpg"
+                />
+                <source media="(max-width: 600px)" srcset="images/rob.jpg" />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/rob-medium.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/rob-big.jpg"
+                />
+                <img src="images/rob.jpg" alt="Rob" />
+              </picture>
             </div>
             <div class="text-testemonials">
               <h4 class="name">Rob</h4>
@@ -182,7 +236,25 @@
 
           <div class="box-testemonials hidden-testemonial-left">
             <div class="circle">
-              <img src="images/natasha.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 400px)"
+                  srcset="images/natasha-small.jpg"
+                />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/natasha.jpg"
+                />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/natasha-medium.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/natasha-big.jpg"
+                />
+                <img src="images/natasha.jpg" alt="Natasha" />
+              </picture>
             </div>
             <div class="text-testemonials">
               <h4 class="name">Natasha</h4>
@@ -199,7 +271,22 @@
 
           <div class="box-testemonials hidden-testemonial-right">
             <div class="circle">
-              <img src="images/andy.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 400px)"
+                  srcset="images/andy-small.jpg"
+                />
+                <source media="(max-width: 600px)" srcset="images/andy.jpg" />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/andy-medium.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/andy-big.jpg"
+                />
+                <img src="images/andy.jpg" alt="Andy" />
+              </picture>
             </div>
             <div class="text-testemonials">
               <h4 class="name">Andy</h4>
@@ -216,7 +303,22 @@
 
           <div class="box-testemonials hidden-testemonial-right">
             <div class="circle">
-              <img src="images/alice.png" alt="" />
+              <picture>
+                <source
+                  media="(max-width: 400px)"
+                  srcset="images/alice-small.jpg"
+                />
+                <source media="(max-width: 600px)" srcset="images/alice.jpg" />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/alice-medium.jpg"
+                />
+                <source
+                  media="(max-width: 1000px)"
+                  srcset="images/alice-big.jpg"
+                />
+                <img src="images/alice.jpg" alt="Alice" />
+              </picture>
             </div>
             <div class="text-testemonials">
               <h4 class="name">Alice</h4>
@@ -479,9 +581,9 @@
       </div>
     </footer>
 
-    <script src="js/scrollAnimation.js"></script>
-    <script src="js/email.js"></script>
-    <script src="js/carousel.js"></script>
-    <script src="js/accordion.js"></script>
+    <script defer src="js/scrollAnimation.js"></script>
+    <script defer src="js/email.js"></script>
+    <script defer src="js/carousel.js"></script>
+    <script defer src="js/accordion.js"></script>
   </body>
 </html>
