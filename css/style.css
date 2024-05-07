@@ -1,3 +1,16 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Signika Negative', sans-serif;
+  color: #ffffff;
+}
+
 /* For Safari browser */
 html::-webkit-scrollbar {
   width: 1em;
@@ -22,15 +35,6 @@ html::-webkit-scrollbar-thumb:hover {
   html {
     scrollbar-color: #7fffd4 #1d5795;
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Signika Negative', sans-serif;
-  color: #ffffff;
-  overflow-x: hidden;
 }
 
 h1,
