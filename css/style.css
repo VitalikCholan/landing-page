@@ -1,3 +1,16 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Signika Negative', sans-serif;
+  color: #ffffff;
+}
+
 /* For Safari browser */
 html::-webkit-scrollbar {
   width: 1em;
@@ -22,15 +35,6 @@ html::-webkit-scrollbar-thumb:hover {
   html {
     scrollbar-color: #7fffd4 #1d5795;
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Signika Negative', sans-serif;
-  color: #ffffff;
-  overflow-x: hidden;
 }
 
 h1,
@@ -148,7 +152,7 @@ p {
 }
 
 .welcome {
-  background-image: url(../images/gym.jpg);
+  background-image: url(../images/gym.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -810,10 +814,6 @@ p {
 }
 
 @media screen and (max-width: 1000px) {
-  .welcome {
-    background-image: url(../images/gym-1000.jpg);
-  }
-
   .box-main {
     display: flex;
     flex-direction: column;
@@ -838,10 +838,6 @@ p {
 }
 
 @media screen and (max-width: 820px) {
-  .welcome {
-    background-image: url(../images/gym-820.jpg);
-  }
-
   .container-header {
     display: flex;
     flex-direction: column;
@@ -849,6 +845,10 @@ p {
 
   .container-header ul {
     padding: 0 2em;
+  }
+
+  .welcome {
+    background-image: url(../images/gym-820.webp);
   }
 
   .welcome-title,
@@ -868,11 +868,6 @@ p {
   .box-main {
     display: flex;
     flex-direction: column;
-  }
-
-  .box-main .text,
-  .box-main .image-main {
-    width: 100%;
   }
 
   .box-main .text:nth-child(odd) {
@@ -961,10 +956,6 @@ p {
 }
 
 @media screen and (max-width: 610px) {
-  .welcome {
-    background-image: url(../images/gym-610.jpg);
-  }
-
   .dropdown-menu:nth-child(1) {
     padding: 0.5em;
     margin-left: 0.3em;
@@ -1076,7 +1067,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .welcome {
-    background-image: url(../images/gym-480.jpg);
+    background-image: url(../images/gym-480.webp);
   }
 
   .box-partner {
