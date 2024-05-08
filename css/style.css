@@ -152,7 +152,7 @@ p {
 }
 
 .welcome {
-  background-image: url(../images/gym.webp);
+  background-image: url(../images/gym-compressed.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -848,7 +848,7 @@ p {
   }
 
   .welcome {
-    background-image: url(../images/gym-820.webp);
+    background-image: url(../images/gym-820-compressed.webp);
   }
 
   .welcome-title,
@@ -1067,7 +1067,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .welcome {
-    background-image: url(../images/gym-480-jpg.jpg);
+    background-image: url(../images/gym-480-compressed.jpg);
     background-attachment: scroll;
   }
 
