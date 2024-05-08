@@ -1067,7 +1067,8 @@ p {
 
 @media screen and (max-width: 480px) {
   .welcome {
-    background-image: url(../images/gym-480.webp);
+    background-image: url(../images/gym-480-jpg.jpg);
+    background-attachment: scroll;
   }
 
   .box-partner {
