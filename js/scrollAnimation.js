@@ -23,16 +23,6 @@ const observer = new IntersectionObserver(
         } else if (targetElement.classList.contains('hidden-faq-even')) {
           targetElement.classList.add('show-faq-even');
         }
-      } else {
-        entry.target.classList.remove(
-          'show-welcome',
-          'show-main-left',
-          'show-main-right',
-          'show-testemonial-left',
-          'show-testemonial-right',
-          'show-faq-odd',
-          'show-faq-even'
-        );
       }
     });
   },

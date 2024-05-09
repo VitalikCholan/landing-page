@@ -1084,4 +1084,28 @@ p {
   .hidden-welcome {
     transition: none;
   }
+
+  .hidden-main-left {
+    transition: none;
+  }
+
+  .hidden-main-right {
+    transition: none;
+  }
+
+  .hidden-testemonial-left {
+    transition: none;
+  }
+
+  .hidden-testemonial-right {
+    transition: none;
+  }
+
+  .hidden-faq-odd {
+    transition: none;
+  }
+
+  .hidden-faq-even {
+    transition: none;
+  }
 }
