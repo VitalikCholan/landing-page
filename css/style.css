@@ -612,6 +612,19 @@ p {
   animation: scroll 40s reverse linear infinite;
 }
 
+.hidden-scroller {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show-scroller {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .box-partner {
   background-color: #004acb;
   border-radius: 10px;
