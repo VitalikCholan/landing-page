@@ -22,17 +22,9 @@ const observer = new IntersectionObserver(
           targetElement.classList.add('show-faq-odd');
         } else if (targetElement.classList.contains('hidden-faq-even')) {
           targetElement.classList.add('show-faq-even');
+        } else if (targetElement.classList.contains('hidden-links')) {
+          targetElement.classList.add('show-links');
         }
-      } else {
-        entry.target.classList.remove(
-          'show-welcome',
-          'show-main-left',
-          'show-main-right',
-          'show-testemonial-left',
-          'show-testemonial-right',
-          'show-faq-odd',
-          'show-faq-even'
-        );
       }
     });
   },
@@ -65,3 +57,33 @@ faqOddElements.forEach((element) => observer.observe(element));
 
 const faqEvenElements = document.querySelectorAll('.hidden-faq-even');
 faqEvenElements.forEach((element) => observer.observe(element));
+
+const linkElements = document.querySelectorAll('.hidden-links');
+linkElements.forEach((element) => observer.observe(element));
+
+/* For infinite scroller */
+
+let thresholdValue = 0;
+if (window.innerWidth <= 820) {
+  thresholdValue = 0.5;
+}
+
+const observerScroller = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const targetElement = entry.target;
+
+        if (targetElement.classList.contains('hidden-scroller')) {
+          targetElement.classList.add('show-scroller');
+        }
+      }
+    });
+  },
+  {
+    threshold: thresholdValue,
+  }
+);
+
+const scrollElement = document.querySelector('.hidden-scroller');
+observerScroller.observe(scrollElement);
