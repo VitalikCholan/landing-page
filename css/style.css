@@ -766,6 +766,35 @@ p {
   z-index: 2;
 }
 
+.hidden-links {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(30%);
+  transition: all 1s;
+}
+
+.hidden-links:nth-of-type(2) {
+  transition-delay: 200ms;
+}
+
+.hidden-links:nth-of-type(3) {
+  transition-delay: 400ms;
+}
+
+.hidden-links:nth-of-type(4) {
+  transition-delay: 600ms;
+}
+
+.hidden-links:nth-of-type(5) {
+  transition-delay: 800ms;
+}
+
+.show-links {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0);
+}
+
 .container-social .social-links a {
   position: relative;
   height: 4em;
@@ -1001,8 +1030,8 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-areas:
-      'instagram . youtube . x'
-      '. facebook . telegram .';
+      'instagram . x . telegram'
+      '. youtube . facebook .';
   }
 
   .social-links:nth-child(1) {
@@ -1052,9 +1081,9 @@ p {
     grid-template-areas:
       '. instagram'
       'youtube .'
-      '. facebook'
-      'telegram .'
-      '. x';
+      '. x'
+      'facebook .'
+      '. telegram';
   }
 
   .social-links:nth-child(1) {

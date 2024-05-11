@@ -22,6 +22,8 @@ const observer = new IntersectionObserver(
           targetElement.classList.add('show-faq-odd');
         } else if (targetElement.classList.contains('hidden-faq-even')) {
           targetElement.classList.add('show-faq-even');
+        } else if (targetElement.classList.contains('hidden-links')) {
+          targetElement.classList.add('show-links');
         }
       }
     });
@@ -55,6 +57,9 @@ faqOddElements.forEach((element) => observer.observe(element));
 
 const faqEvenElements = document.querySelectorAll('.hidden-faq-even');
 faqEvenElements.forEach((element) => observer.observe(element));
+
+const linkElements = document.querySelectorAll('.hidden-links');
+linkElements.forEach((element) => observer.observe(element));
 
 /* For infinite scroller */
 
