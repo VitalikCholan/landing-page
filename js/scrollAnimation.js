@@ -56,6 +56,13 @@ faqOddElements.forEach((element) => observer.observe(element));
 const faqEvenElements = document.querySelectorAll('.hidden-faq-even');
 faqEvenElements.forEach((element) => observer.observe(element));
 
+/* For infinite scroller */
+
+let thresholdValue = 0;
+if (window.innerWidth <= 820) {
+  thresholdValue = 0.5;
+}
+
 const observerScroller = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -69,7 +76,7 @@ const observerScroller = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: thresholdValue,
   }
 );
 
