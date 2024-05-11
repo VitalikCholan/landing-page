@@ -930,6 +930,19 @@ p {
     }
   }
 
+  .hidden-scroller {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+
+  .show-scroller {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+
   .container-footer {
     display: flex;
     flex-direction: column;

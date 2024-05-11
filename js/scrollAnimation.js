@@ -22,8 +22,6 @@ const observer = new IntersectionObserver(
           targetElement.classList.add('show-faq-odd');
         } else if (targetElement.classList.contains('hidden-faq-even')) {
           targetElement.classList.add('show-faq-even');
-        } else if (targetElement.classList.contains('hidden-scroller')) {
-          targetElement.classList.add('show-scroller');
         }
       }
     });
@@ -52,11 +50,28 @@ const testemonialRightElements = document.querySelectorAll(
 );
 testemonialRightElements.forEach((element) => observer.observe(element));
 
-const scrollElement = document.querySelector('.hidden-scroller');
-observer.observe(scrollElement);
-
 const faqOddElements = document.querySelectorAll('.hidden-faq-odd');
 faqOddElements.forEach((element) => observer.observe(element));
 
 const faqEvenElements = document.querySelectorAll('.hidden-faq-even');
 faqEvenElements.forEach((element) => observer.observe(element));
+
+const observerScroller = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const targetElement = entry.target;
+
+        if (targetElement.classList.contains('hidden-scroller')) {
+          targetElement.classList.add('show-scroller');
+        }
+      }
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
+
+const scrollElement = document.querySelector('.hidden-scroller');
+observerScroller.observe(scrollElement);
