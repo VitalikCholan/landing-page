@@ -1154,7 +1154,6 @@ p {
   }
 
   .navbar .dropdown {
-    /* display: none; */
     opacity: 0;
     margin: 0px;
     flex-direction: column;
@@ -1168,9 +1167,8 @@ p {
   }
 
   .navbar .dropdown.active {
-    /* display: flex; */
     opacity: 1;
-    max-height: 1000px;
+    max-height: 300px;
   }
 
   .welcome {
