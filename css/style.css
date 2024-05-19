@@ -1121,6 +1121,56 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  .container-header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 3.6rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #00ffff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar .dropdown {
+    opacity: 0;
+    margin: 0px;
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+  }
+
+  .navbar .dropdown .nav-link {
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  .navbar .dropdown.active {
+    opacity: 1;
+    max-height: 300px;
+  }
+
   .welcome {
     background-image: url(../images/gym-480-compressed.jpg);
     background-attachment: scroll;
