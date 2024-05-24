@@ -1168,7 +1168,37 @@ p {
 
   .navbar .dropdown.active {
     opacity: 1;
-    max-height: 300px;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    transform: scaleX(0);
+  }
+
+  .dropdown-item:focus .dropdown-menu {
+    opacity: 0;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .dropdown-item .dropdown-menu {
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 1s ease-in-out, opacity 1s ease-in-out;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-item .dropdown-menu.active {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .welcome {
