@@ -1194,11 +1194,16 @@ p {
     min-width: 480px;
     display: flex;
     flex-direction: column;
+    transform: translateY(0);
   }
 
   .dropdown-item .dropdown-menu.active {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .dropdown-link:hover {
+    border-bottom: none;
   }
 
   .welcome {
