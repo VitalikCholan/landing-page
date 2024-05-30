@@ -1155,10 +1155,6 @@ p {
     transform-origin: center;
   }
 
-  /* .toggle-button[aria-expanded='true'] :is(.top, .bottom) {
-    y: 45;
-  } */
-
   .toggle-button[aria-expanded='true'] .top {
     rotate: 45deg;
   }
