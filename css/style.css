@@ -67,6 +67,10 @@ p {
   font-size: 2.5rem;
 }
 
+.container-header .toggle-button {
+  display: none;
+}
+
 .container-header .dropdown {
   display: flex;
   flex-direction: row;
@@ -1153,6 +1157,10 @@ p {
   .toggle-button[aria-expanded='true'] .line {
     transition: y 500ms ease-in, rotate 500ms ease-in 500ms, opacity 0ms 500ms;
     transform-origin: center;
+  }
+
+  .toggle-button[aria-expanded='true'] :is(.top, .bottom) {
+    y: 45;
   }
 
   .toggle-button[aria-expanded='true'] .top {

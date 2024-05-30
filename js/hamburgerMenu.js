@@ -1,6 +1,15 @@
 const toggleButton = document.querySelector('.toggle-button');
-const lineTop = document.querySelector('.top');
-const lineBottom = document.querySelector('.bottom');
+
+toggleButton.addEventListener('click', () => {
+  const isOpened = toggleButton.getAttribute('aria-expanded');
+
+  if (isOpened === 'false') {
+    toggleButton.setAttribute('aria-expanded', 'true');
+  } else {
+    toggleButton.setAttribute('aria-expanded', 'false');
+  }
+});
+
 const dropdown = document.querySelector('.dropdown');
 
 toggleButton.addEventListener('click', () => {
