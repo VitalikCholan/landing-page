@@ -911,8 +911,8 @@ p {
   }
 
   .welcome .modal-one {
-    min-width: 450px;
-    height: 15%;
+    min-width: 300px;
+    height: 25%;
   }
 
   .box-main {
@@ -1000,8 +1000,8 @@ p {
 
 @media screen and (max-width: 650px) {
   .welcome .modal-two {
-    height: 15%;
-    min-width: 450px;
+    height: 20%;
+    min-width: 300px;
   }
 
   .welcome .modal-two .modal-text-two {
@@ -1009,8 +1009,8 @@ p {
   }
 
   .welcome .modal-three {
-    min-width: 480px;
-    height: 20%;
+    min-width: 300px;
+    height: 30%;
   }
 
   .welcome .modal-three .close-btn-three {
