@@ -59,8 +59,16 @@ p {
   align-items: center;
 }
 
+.container-header .toggle-button {
+  display: none;
+}
+
 .container-header .title {
   font-size: 2.5rem;
+}
+
+.container-header .toggle-button {
+  display: none;
 }
 
 .container-header .dropdown {
@@ -1130,23 +1138,37 @@ p {
     position: relative;
   }
 
-  .toggle-button {
+  .container-header .toggle-button {
+    display: block;
     position: absolute;
-    top: 3.6rem;
+    top: 2.8rem;
     right: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    background-color: inherit;
+    border: 3px solid #00ffff;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #00ffff;
-    border-radius: 10px;
-    cursor: pointer;
+  .toggle-button .line {
+    transition: y 500ms ease-in 500ms, rotate 500ms ease-in, opacity 0ms 500ms;
+    transform-origin: center;
+  }
+
+  .toggle-button[aria-expanded='true'] .line {
+    transition: y 500ms ease-in, rotate 500ms ease-in 500ms, opacity 0ms 500ms;
+    transform-origin: center;
+  }
+
+  .toggle-button[aria-expanded='true'] .top {
+    rotate: 45deg;
+  }
+
+  .toggle-button[aria-expanded='true'] .middle {
+    opacity: 0;
+  }
+
+  .toggle-button[aria-expanded='true'] .bottom {
+    rotate: -45deg;
   }
 
   .navbar {
@@ -1194,11 +1216,16 @@ p {
     min-width: 480px;
     display: flex;
     flex-direction: column;
+    transform: translateY(0);
   }
 
   .dropdown-item .dropdown-menu.active {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  .dropdown-link:hover {
+    border-bottom: none;
   }
 
   .welcome {

@@ -1,4 +1,21 @@
 const toggleButton = document.querySelector('.toggle-button');
+const lineTop = document.querySelector('.top');
+const lineBottom = document.querySelector('.bottom');
+
+toggleButton.addEventListener('click', () => {
+  const isOpened = toggleButton.getAttribute('aria-expanded');
+
+  if (isOpened === 'false') {
+    toggleButton.setAttribute('aria-expanded', 'true');
+    lineTop.setAttribute('y', '45');
+    lineBottom.setAttribute('y', '45');
+  } else {
+    toggleButton.setAttribute('aria-expanded', 'false');
+    lineTop.setAttribute('y', '25');
+    lineBottom.setAttribute('y', '75');
+  }
+});
+
 const dropdown = document.querySelector('.dropdown');
 
 toggleButton.addEventListener('click', () => {
