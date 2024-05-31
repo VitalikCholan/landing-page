@@ -182,14 +182,14 @@ p {
 }
 
 .welcome .welcome-title {
-  font-size: clamp(3rem, 2.5258rem + 1.9656vw, 4rem);
+  font-size: clamp(2.8rem, 2.231rem + 2.3587vw, 4rem);
   text-transform: uppercase;
   margin: 0 0.5em;
   text-wrap: balance;
 }
 
 .welcome .welcome-text {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.2629rem + 0.9828vw, 2rem);
   margin: 0 1em 1em;
   text-wrap: balance;
 }
@@ -484,12 +484,12 @@ p {
 
 .box-main .text h3 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 2.2629rem + 0.9828vw, 3rem);
   margin: 0.5em 1em;
 }
 
 .box-main .text p {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.0577rem + 0.5897vw, 1.5rem);
   margin: 0 2em;
 }
 
@@ -911,8 +911,8 @@ p {
   }
 
   .welcome .modal-one {
-    min-width: 450px;
-    height: 15%;
+    min-width: 300px;
+    height: 25%;
   }
 
   .box-main {
@@ -1000,8 +1000,8 @@ p {
 
 @media screen and (max-width: 650px) {
   .welcome .modal-two {
-    height: 15%;
-    min-width: 450px;
+    height: 20%;
+    min-width: 300px;
   }
 
   .welcome .modal-two .modal-text-two {
@@ -1009,8 +1009,8 @@ p {
   }
 
   .welcome .modal-three {
-    min-width: 480px;
-    height: 20%;
+    min-width: 300px;
+    height: 30%;
   }
 
   .welcome .modal-three .close-btn-three {
