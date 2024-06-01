@@ -51,6 +51,10 @@ p {
   color: #ffffff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container-header {
   background-color: #0843a0;
   display: flex;
@@ -78,7 +82,6 @@ p {
 }
 
 .container-header .dropdown .nav-link {
-  list-style-type: none;
   padding: 0 0.5em;
   font-size: clamp(1.2rem, 1.0577rem + 0.5897vw, 1.5rem);
   text-decoration: none;
