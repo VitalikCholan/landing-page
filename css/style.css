@@ -289,7 +289,6 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 750px;
-  height: 10%;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -305,17 +304,26 @@ ul {
 }
 
 .modal-one .close-btn-one {
+  background-color: inherit;
+  border: none;
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
-  padding: 0.4em;
+  padding: 0.2em;
   width: 24px;
   height: 36px;
+  position: relative;
+}
+
+.close-btn-one .fa-xmark {
+  position: absolute;
+  top: 0;
+  right: -2px;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
 }
 
-.modal-one .close-btn-one:hover {
+.close-btn-one .fa-xmark:hover {
   transform: rotate(360deg);
 }
 
@@ -342,19 +350,18 @@ ul {
   }
 }
 
-.welcome .modal-container-two {
+.modal-container-two {
   display: none;
   z-index: 1;
 }
 
-.welcome .modal-two {
+.modal-two {
   background-color: #0843a0;
   position: fixed;
   top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 600px;
-  height: 10%;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -362,14 +369,16 @@ ul {
   animation: modalTwoStart 500ms ease-in-out forwards;
 }
 
-.welcome .modal-two .modal-text-two {
+.modal-two .modal-text-two {
   color: #00ffff;
   font-size: 1.5rem;
   text-wrap: balance;
   padding-left: 0.4em;
 }
 
-.welcome .modal-two .close-btn-two {
+.modal-two .close-btn-two {
+  background-color: inherit;
+  border: none;
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
@@ -378,9 +387,18 @@ ul {
   height: 36px;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
+  position: relative;
 }
 
-.welcome .modal-two .close-btn-two:hover {
+.close-btn-two .fa-xmark {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.close-btn-two .fa-xmark:hover {
   transform: rotate(360deg);
 }
 
@@ -412,14 +430,13 @@ ul {
   z-index: 1;
 }
 
-.welcome .modal-three {
+.modal-three {
   background-color: #0843a0;
   position: fixed;
   top: 17%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 600px;
-  height: 15%;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -427,25 +444,37 @@ ul {
   animation: modalThreeStart 500ms ease-in-out forwards;
 }
 
-.welcome .modal-three .modal-text-three {
+.modal-three .modal-text-three {
   color: #00ffff;
   font-size: 1.5rem;
   text-wrap: balance;
   padding-left: 0.4em;
 }
 
-.welcome .modal-three .close-btn-three {
+.modal-three .close-btn-three {
+  background-color: inherit;
+  border: none;
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
   padding: 0.8em;
+  margin-right: 0.5em;
   width: 24px;
   height: 36px;
   transform: rotate(0deg);
   transition: transform 500ms ease-in-out;
+  position: relative;
 }
 
-.welcome .modal-three .close-btn-three:hover {
+.close-btn-three .fa-xmark {
+  position: absolute;
+  top: 18%;
+  left: 25%;
+  transform: rotate(0deg);
+  transition: transform 500ms ease-in-out;
+}
+
+.close-btn-three .fa-xmark:hover {
   transform: rotate(360deg);
 }
 

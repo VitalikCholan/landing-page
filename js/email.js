@@ -33,7 +33,7 @@ emailBtn.addEventListener('click', () => {
     modalContainerTwo.style.display = 'block';
     modalOverlay.style.display = 'block';
     setTimeout(() => {
-      modalTwo.style.animation = 'modalOneEnd 500ms ease-in-out forwards';
+      modalTwo.style.animation = 'modalTwoEnd 500ms ease-in-out forwards';
       modalOverlay.style.animation = 'hideOverlay 500ms ease-in-out forwards';
       setTimeout(() => {
         modalContainerTwo.style.display = 'none';
@@ -45,16 +45,16 @@ emailBtn.addEventListener('click', () => {
   } else {
     modalContainerThree.style.display = 'block';
     modalOverlay.style.display = 'block';
-    setTimeout(() => {
-      modalThree.style.animation = 'modalOneEnd 500ms ease-in-out forwards';
-      modalOverlay.style.animation = 'hideOverlay 500ms ease-in-out forwards';
-      setTimeout(() => {
-        modalContainerThree.style.display = 'none';
-        modalOverlay.style.display = 'none';
-        modalThree.style.animation = '';
-        modalOverlay.style.animation = '';
-      }, 500);
-    }, 4500);
+    // setTimeout(() => {
+    //   modalThree.style.animation = 'modalThreeEnd 500ms ease-in-out forwards';
+    //   modalOverlay.style.animation = 'hideOverlay 500ms ease-in-out forwards';
+    //   setTimeout(() => {
+    //     modalContainerThree.style.display = 'none';
+    //     modalOverlay.style.display = 'none';
+    //     modalThree.style.animation = '';
+    //     modalOverlay.style.animation = '';
+    //   }, 500);
+    // }, 4500);
   }
 });
 
