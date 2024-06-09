@@ -1275,6 +1275,49 @@ ul {
   }
 }
 
+@media (hover: none) {
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: none;
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(0);
+  }
+
+  .dropdown-link:hover {
+    border-bottom: none;
+  }
+
+  .welcome .email-btn:hover {
+    color: inherit;
+    cursor: auto;
+  }
+
+  .welcome .email-btn:hover::after {
+    transform: scale(0);
+  }
+
+  .close-btn-one .fa-xmark:hover {
+    transform: rotate(0);
+  }
+
+  .close-btn-two .fa-xmark:hover {
+    transform: rotate(0);
+  }
+
+  .close-btn-three .fa-xmark:hover {
+    transform: rotate(0);
+  }
+
+  .container-social .social-links a:hover {
+    background-color: inherit;
+  }
+
+  .container-social .social-links a i:hover {
+    transform: scale(1);
+  }
+}
+
 @media (prefer-reduced-motion) {
   .hidden-welcome {
     transition: none;
