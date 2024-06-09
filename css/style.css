@@ -790,6 +790,7 @@ ul {
 }
 
 .container-footer .container-social {
+  padding: 0;
   display: inline-flex;
   align-items: center;
 }
