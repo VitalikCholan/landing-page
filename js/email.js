@@ -45,16 +45,16 @@ emailBtn.addEventListener('click', () => {
   } else {
     modalContainerThree.style.display = 'block';
     modalOverlay.style.display = 'block';
-    // setTimeout(() => {
-    //   modalThree.style.animation = 'modalThreeEnd 500ms ease-in-out forwards';
-    //   modalOverlay.style.animation = 'hideOverlay 500ms ease-in-out forwards';
-    //   setTimeout(() => {
-    //     modalContainerThree.style.display = 'none';
-    //     modalOverlay.style.display = 'none';
-    //     modalThree.style.animation = '';
-    //     modalOverlay.style.animation = '';
-    //   }, 500);
-    // }, 4500);
+    setTimeout(() => {
+      modalThree.style.animation = 'modalThreeEnd 500ms ease-in-out forwards';
+      modalOverlay.style.animation = 'hideOverlay 500ms ease-in-out forwards';
+      setTimeout(() => {
+        modalContainerThree.style.display = 'none';
+        modalOverlay.style.display = 'none';
+        modalThree.style.animation = '';
+        modalOverlay.style.animation = '';
+      }, 500);
+    }, 4500);
   }
 });
 

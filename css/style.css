@@ -309,7 +309,7 @@ ul {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
-  padding: 0.2em;
+  margin: 0 0.3em;
   width: 24px;
   height: 36px;
   position: relative;
@@ -373,7 +373,7 @@ ul {
   color: #00ffff;
   font-size: 1.5rem;
   text-wrap: balance;
-  padding-left: 0.4em;
+  padding: 0 0.4em;
 }
 
 .modal-two .close-btn-two {
@@ -382,7 +382,7 @@ ul {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
-  padding: 0.4em;
+  margin-right: 0.5em;
   width: 24px;
   height: 36px;
   transform: rotate(0deg);
@@ -457,8 +457,7 @@ ul {
   color: #7fffd4;
   font-size: 2rem;
   cursor: pointer;
-  padding: 0.8em;
-  margin-right: 0.5em;
+  margin-right: 1em;
   width: 24px;
   height: 36px;
   transform: rotate(0deg);
@@ -791,6 +790,7 @@ ul {
 }
 
 .container-footer .container-social {
+  padding: 0;
   display: inline-flex;
   align-items: center;
 }
@@ -925,26 +925,31 @@ ul {
     flex-direction: column;
   }
 
-  .container-header ul {
-    padding: 0 2em;
-  }
-
   .welcome {
     background-image: url(../images/gym-820-compressed.webp);
   }
 
   .welcome-title,
-  .welcome p {
+  .welcome .welcome-text {
     padding: 0 0.5em;
   }
 
-  .welcome button {
+  .welcome .email-btn {
     margin-top: 1em;
   }
 
   .welcome .modal-one {
     min-width: 300px;
     height: 25%;
+  }
+
+  .modal-one .close-btn-one {
+    padding: 0 0.4em;
+  }
+
+  .modal-two .close-btn-two {
+    padding: 0 0.4em;
+    margin-right: 0.5em;
   }
 
   .box-main {
@@ -1036,17 +1041,9 @@ ul {
     min-width: 300px;
   }
 
-  .welcome .modal-two .modal-text-two {
-    padding: 0;
-  }
-
   .welcome .modal-three {
     min-width: 300px;
     height: 30%;
-  }
-
-  .welcome .modal-three .close-btn-three {
-    padding: 0.4em;
   }
 }
 
@@ -1162,7 +1159,7 @@ ul {
 
 @media screen and (max-width: 480px) {
   .container-header {
-    padding: 1rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1173,7 +1170,7 @@ ul {
   .container-header .toggle-button {
     display: block;
     position: absolute;
-    top: 2.8rem;
+    top: 1.5rem;
     right: 1rem;
     background-color: inherit;
     border: 3px solid #00ffff;
@@ -1256,6 +1253,10 @@ ul {
     pointer-events: auto;
   }
 
+  .dropdown-menu .dropdown-list-item {
+    margin: 0.2em 0;
+  }
+
   .dropdown-link:hover {
     border-bottom: none;
   }
@@ -1271,6 +1272,49 @@ ul {
 
   .box-faq {
     max-width: 300px;
+  }
+}
+
+@media (hover: none) {
+  html::-webkit-scrollbar-thumb:hover {
+    background-color: none;
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(0);
+  }
+
+  .dropdown-link:hover {
+    border-bottom: none;
+  }
+
+  .welcome .email-btn:hover {
+    color: inherit;
+    cursor: auto;
+  }
+
+  .welcome .email-btn:hover::after {
+    transform: scale(0);
+  }
+
+  .close-btn-one .fa-xmark:hover {
+    transform: rotate(0);
+  }
+
+  .close-btn-two .fa-xmark:hover {
+    transform: rotate(0);
+  }
+
+  .close-btn-three .fa-xmark:hover {
+    transform: rotate(0);
+  }
+
+  .container-social .social-links a:hover {
+    background-color: inherit;
+  }
+
+  .container-social .social-links a i:hover {
+    transform: scale(1);
   }
 }
 
