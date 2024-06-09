@@ -25,6 +25,7 @@
           class="toggle-button"
           aria-controls="primary-navigation"
           aria-expanded="false"
+          aria-label="Open and close navigation section"
         >
           <svg
             class="hamburger"
@@ -62,35 +63,35 @@
           <ul class="dropdown">
             <li class="nav-link dropdown-item" tabindex="0">
               Home
-              <div class="dropdown-menu dropdown-menu-home">
-                <a href="#" class="dropdown-link">Products</a>
-                <a href="#" class="dropdown-link">Services</a>
-                <a href="#" class="dropdown-link">Testimonials</a>
-              </div>
+              <ul class="dropdown-menu dropdown-menu-home">
+                <li><a href="#" class="dropdown-link">Products</a></li>
+                <li><a href="#" class="dropdown-link">Services</a></li>
+                <li><a href="#" class="dropdown-link">Testimonials</a></li>
+              </ul>
             </li>
             <li class="nav-link dropdown-item" tabindex="0">
               Shop
-              <div class="dropdown-menu dropdown-menu-shop">
-                <a href="#" class="dropdown-link">Clothes</a>
-                <a href="#" class="dropdown-link">Equipment</a>
-                <a href="#" class="dropdown-link">Accessories</a>
-              </div>
+              <ul class="dropdown-menu dropdown-menu-shop">
+                <li><a href="#" class="dropdown-link">Clothes</a></li>
+                <li><a href="#" class="dropdown-link">Equipment</a></li>
+                <li><a href="#" class="dropdown-link">Accessories</a></li>
+              </ul>
             </li>
             <li class="nav-link dropdown-item" tabindex="0">
               About
-              <div class="dropdown-menu dropdown-menu-about">
-                <a href="#" class="dropdown-link">Our Story</a>
-                <a href="#" class="dropdown-link">Vision</a>
-                <a href="#" class="dropdown-link">Team</a>
-              </div>
+              <ul class="dropdown-menu dropdown-menu-about">
+                <li><a href="#" class="dropdown-link">Our Story</a></li>
+                <li><a href="#" class="dropdown-link">Vision</a></li>
+                <li><a href="#" class="dropdown-link">Team</a></li>
+              </ul>
             </li>
             <li class="nav-link dropdown-item" tabindex="0">
               Contact
-              <div class="dropdown-menu dropdown-menu-contact">
-                <a href="#" class="dropdown-link">Contact Us</a>
-                <a href="#" class="dropdown-link">Support</a>
-                <a href="#" class="dropdown-link">FAQs</a>
-              </div>
+              <ul class="dropdown-menu dropdown-menu-contact">
+                <li><a href="#" class="dropdown-link">Contact Us</a></li>
+                <li><a href="#" class="dropdown-link">Support</a></li>
+                <li><a href="#" class="dropdown-link">FAQs</a></li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -120,16 +121,18 @@
               <p class="modal-text-one">
                 Please enter your email address to subscribe.
               </p>
-              <div class="close-btn-one">
+              <button class="close-btn-one" aria-label="Close modal.">
                 <i class="fa-solid fa-xmark"></i>
-              </div>
+              </button>
             </div>
           </div>
 
           <div class="modal-container-two">
             <div class="modal-two">
               <p class="modal-text-two">Please enter a valid email address.</p>
-              <div class="close-btn-two"><i class="fa-solid fa-xmark"></i></div>
+              <button class="close-btn-two" aria-label="Close modal.">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
           </div>
 
@@ -138,9 +141,9 @@
               <p class="modal-text-three">
                 Thank you for providing your email address. You're subscribed!
               </p>
-              <div class="close-btn-three">
+              <button class="close-btn-three" aria-label="Close modal.">
                 <i class="fa-solid fa-xmark"></i>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -174,7 +177,10 @@
                   media="(max-width: 1000px)"
                   srcset="images/athlete-big-compressed.jpg"
                 />
-                <img src="images/athlete-medium-compressed.jpg" alt="athlete" />
+                <img
+                  src="images/athlete-medium-compressed.jpg"
+                  alt="Athlete, which play a basketball"
+                />
               </picture>
             </div>
           </div>
@@ -196,7 +202,7 @@
                 />
                 <img
                   src="images/equipment-medium-compressed.jpg"
-                  alt="equipment"
+                  alt="Sport equipment"
                 />
               </picture>
             </div>
@@ -240,7 +246,11 @@
                   media="(max-width: 1000px)"
                   srcset="images/woman-big-compressed.jpg"
                 />
-                <img src="images/woman-medium-compressed.jpg" alt="woman" />
+                <img
+                  src="images/woman-medium-compressed.jpg"
+                  alt="Woman, which
+                dancing"
+                />
               </picture>
             </div>
           </div>
@@ -524,42 +534,42 @@
 
         <h6 class="title-social-links">Our social links</h6>
 
-        <div class="container-social">
-          <div class="social-links hidden-links">
+        <ul class="container-social">
+          <li class="social-links hidden-links">
             <div class="tooltip">Instagram</div>
-            <a href="#" aria-label="Link to your Instagram"
+            <a href="#" aria-label="Link to our Instagram"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-          </div>
+          </li>
 
-          <div class="social-links hidden-links">
+          <li class="social-links hidden-links">
             <div class="tooltip">Youtube</div>
-            <a href="#" aria-label="Link to your Youtube channel"
+            <a href="#" aria-label="Link to our Youtube channel"
               ><i class="fa-brands fa-youtube"></i
             ></a>
-          </div>
+          </li>
 
-          <div class="social-links hidden-links">
+          <li class="social-links hidden-links">
             <div class="tooltip">X (Twitter)</div>
-            <a href="#" aria-label="Link to your X (Twitter)"
+            <a href="#" aria-label="Link to our X (Twitter)"
               ><i class="fa-brands fa-x-twitter"></i
             ></a>
-          </div>
+          </li>
 
-          <div class="social-links hidden-links">
+          <li class="social-links hidden-links">
             <div class="tooltip">Facebook</div>
-            <a href="#" aria-label="Link to your Facebook"
+            <a href="#" aria-label="Link to our Facebook"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-          </div>
+          </li>
 
-          <div class="social-links hidden-links">
+          <li class="social-links hidden-links">
             <div class="tooltip">Telegram</div>
-            <a href="#" aria-label="Link to your Telegram"
+            <a href="#" aria-label="Link to our Telegram"
               ><i class="fa-brands fa-telegram"></i
             ></a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </footer>
 
