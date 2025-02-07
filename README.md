@@ -4,6 +4,8 @@
 
 Gym Bro is a landing page designed to showcase a range of high-quality fitness equipment for athletes of all levels. Whether you're a seasoned professional or just starting your fitness journey, Gym Bro offers a comprehensive selection of products to meet your needs.
 
+🔗 Live Demo: [Gym Bro](https://landing-page-gym-bro.netlify.app/)
+
 ## Features
 
 - Responsive Design: The landing page is optimized for various screen sizes, ensuring a seamless browsing experience across devices.
