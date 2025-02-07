@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Signika Negative', sans-serif;
+  font-family: "Signika Negative", sans-serif;
   color: #ffffff;
 }
 
@@ -92,7 +92,7 @@ ul {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -176,7 +176,7 @@ ul {
 
 /* Made text more readable on background image*/
 .welcome::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #1d5795;
   inset: 0;
@@ -228,7 +228,7 @@ ul {
 }
 
 .welcome .email-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -623,10 +623,10 @@ ul {
 }
 
 .scroller {
-  max-width: 1350px;
+  max-width: 1800px;
 }
 
-.scroller[data-animated='true'] {
+.scroller[data-animated="true"] {
   overflow: hidden;
   -webkit-mask: linear-gradient(
     90deg,
@@ -645,7 +645,7 @@ ul {
   gap: 1rem;
 }
 
-.scroller[data-animated='true'] .scroller_inner {
+.scroller[data-animated="true"] .scroller_inner {
   width: max-content;
   flex-wrap: nowrap;
   animation: scroll 40s reverse linear infinite;
@@ -715,7 +715,7 @@ ul {
 }
 
 .box-faq .question::after {
-  content: '+';
+  content: "+";
   font-size: 2rem;
   position: absolute;
   right: 0px;
@@ -734,7 +734,7 @@ ul {
 }
 
 .box-faq.active .question::after {
-  content: '-';
+  content: "-";
   font-size: 2rem;
   position: absolute;
   right: 0px;
@@ -885,7 +885,7 @@ ul {
 }
 
 .container-social .social-links .tooltip::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 15px;
   width: 15px;
@@ -980,7 +980,7 @@ ul {
     gap: 1rem;
   }
 
-  .scroller[data-animated='true'] {
+  .scroller[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: linear-gradient(
       180deg,
@@ -1067,8 +1067,8 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-areas:
-      'instagram . x . telegram'
-      '. youtube . facebook .';
+      "instagram . x . telegram"
+      ". youtube . facebook .";
   }
 
   .social-links:nth-child(1) {
@@ -1116,11 +1116,11 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
     grid-template-areas:
-      '. instagram'
-      'youtube .'
-      '. x'
-      'facebook .'
-      '. telegram';
+      ". instagram"
+      "youtube ."
+      ". x"
+      "facebook ."
+      ". telegram";
   }
 
   .social-links:nth-child(1) {
@@ -1183,20 +1183,20 @@ ul {
     transform-origin: center;
   }
 
-  .toggle-button[aria-expanded='true'] .line {
+  .toggle-button[aria-expanded="true"] .line {
     transition: y 500ms ease-in, rotate 500ms ease-in 500ms, opacity 0ms 500ms;
     transform-origin: center;
   }
 
-  .toggle-button[aria-expanded='true'] .top {
+  .toggle-button[aria-expanded="true"] .top {
     rotate: 45deg;
   }
 
-  .toggle-button[aria-expanded='true'] .middle {
+  .toggle-button[aria-expanded="true"] .middle {
     opacity: 0;
   }
 
-  .toggle-button[aria-expanded='true'] .bottom {
+  .toggle-button[aria-expanded="true"] .bottom {
     rotate: -45deg;
   }
 
